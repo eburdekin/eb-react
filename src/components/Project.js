@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
-export default function Project({ name, summary }) {
+export default function Project({ name, summary, fullSummary }) {
   const [open, setOpen] = React.useState(false);
   const handleClick = () => setOpen(!open);
 
@@ -39,11 +39,11 @@ export default function Project({ name, summary }) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={modalStyle}>
-          <Typography id="modal-modal-title" variant="h6">
+          <Typography id="modal-modal-title" variant="h4">
             {name}
           </Typography>
-          <Typography>{summary}</Typography>
-          <Typography>Addition context, links, etc.</Typography>
+          <Typography sx={{ fontWeight: "medium" }}>{summary}</Typography>
+          <Typography>{fullSummary}</Typography>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Eirik_Newth-A_sleeping_kitten-02.jpg"
             alt="screenshot"

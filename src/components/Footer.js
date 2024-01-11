@@ -15,13 +15,21 @@ export default function Footer() {
 
   return (
     <div style={navStyle}>
-      <a href="mailto:hello@eileenburdekin.com">
+      <a
+        href="mailto:hello@eileenburdekin.com"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon icon={faEnvelope} size="2xl" style={iconStyle} />
       </a>
-      <a href="https://github.com/eburdekin">
+      <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} size="2xl" style={iconStyle} />
       </a>
-      <a href="https://www.linkedin.com/in/eburdekin/">
+      <a
+        href="https://www.linkedin.com/in/eburdekin/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon icon={faLinkedin} size="2xl" style={iconStyle} />
       </a>
     </div>
