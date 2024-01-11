@@ -7,6 +7,9 @@ import Typography from "@mui/material/Typography";
 export default function Footer() {
   const navStyle = {
     padding: "10px",
+    position: "absolute",
+    bottom: 0,
+    width: "75%",
   };
 
   const iconStyle = {
@@ -14,13 +17,10 @@ export default function Footer() {
     margin: "5px",
   };
 
-  const copyrightStyle = {
-    position: "absolute",
-    bottom: 0,
-    width: "75%",
-    // fontSize: "14px",
-    // fontWeight: "medium",
-  };
+  // const copyrightStyle = {
+  //   // fontSize: "14px",
+  //   // fontWeight: "medium",
+  // };
 
   return (
     <>
@@ -42,8 +42,8 @@ export default function Footer() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="2xl" style={iconStyle} />
         </a>
+        <Typography sx={{ fontSize: 14 }}>© Eileen Burdekin 2023</Typography>
       </div>
-      <Typography style={copyrightStyle}>© Eileen Burdekin 2023</Typography>
     </>
   );
 }

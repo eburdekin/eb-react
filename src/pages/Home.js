@@ -13,7 +13,8 @@ function Home() {
         Los Angeles, CA
       </Typography>
       <Typography variant="body1" sx={{ fontWeight: "medium" }}>
-        You can find me at @eburdekin in most places.
+        Full-stack engineer & digital marketing expert.
+        <br /> You can find me @eburdekin in most places.
       </Typography>
       <Footer />
     </Container>

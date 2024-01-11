@@ -19,12 +19,12 @@ export default function NavBar() {
       <NavLink to="/" style={linkStyle}>
         Home
       </NavLink>
-      <NavLink to="/work" style={linkStyle}>
+      {/* <NavLink to="/work" style={linkStyle}>
         Work
       </NavLink>
       <NavLink to="/contact" style={linkStyle}>
         Contact
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 }
