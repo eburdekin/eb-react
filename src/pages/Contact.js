@@ -1,8 +1,8 @@
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import NavBar from "../NavBar";
+import NavBar from "../components/NavBar";
 // import Header from "../Header";
-import Footer from "../Footer";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   return (

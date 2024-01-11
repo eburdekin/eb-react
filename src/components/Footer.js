@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <div style={navStyle}>
-      <a href="mailto:eileenburdekin@proton.me">
+      <a href="mailto:hello@eileenburdekin.com">
         <FontAwesomeIcon icon={faEnvelope} size="2xl" style={iconStyle} />
       </a>
       <a href="https://github.com/eburdekin">

@@ -1,8 +1,8 @@
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import NavBar from "../NavBar";
-import Header from "../Header";
-import Footer from "../Footer";
+import NavBar from "../components/NavBar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
