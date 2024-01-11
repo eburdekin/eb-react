@@ -20,8 +20,6 @@ function Home() {
           <br />
           <br />
           <br />
-          <br />
-          <br />
         </Typography>
       </Container>
       <Footer />
