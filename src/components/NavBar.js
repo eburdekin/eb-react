@@ -7,8 +7,10 @@ export default function NavBar() {
 
   const linkStyle = {
     fontWeight: "bold",
+    fontFamily: "Figtree",
+    color: "#027353",
+    fontSize: 20,
     textDecoration: "none",
-    color: "inherit",
     margin: "5px",
   };
 

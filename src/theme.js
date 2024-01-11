@@ -17,6 +17,9 @@ const theme = createTheme({
     weightExtraBold: 800,
     weightBlack: 900,
   },
+  palette: {
+    teal: "#027353",
+  },
 });
 
 export default theme;

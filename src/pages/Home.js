@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ width: "100%" }}>
       <NavBar />
       <Header />
       <Typography variant="body1" sx={{ fontWeight: "bold" }}>
@@ -15,8 +15,6 @@ function Home() {
       <Typography variant="body1" sx={{ fontWeight: "medium" }}>
         You can find me at @eburdekin in most places.
       </Typography>
-
-      <Typography variant="button">This is a button label</Typography>
       <Footer />
     </Container>
   );
