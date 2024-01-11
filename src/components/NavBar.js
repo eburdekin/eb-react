@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
+import Container from "@mui/material/Container";
 
 export default function NavBar() {
   const navStyle = {
     padding: "10px",
-    maxWidth: "100%",
+    width: "100%",
+    textAlign: "center",
   };
 
   const linkStyle = {
@@ -16,7 +18,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav style={navStyle}>
+    <Container maxWidth="md" style={navStyle}>
       <NavLink to="/" style={linkStyle}>
         Home
       </NavLink>
@@ -26,6 +28,6 @@ export default function NavBar() {
       <NavLink to="/contact" style={linkStyle}>
         Contact
       </NavLink> */}
-    </nav>
+    </Container>
   );
 }

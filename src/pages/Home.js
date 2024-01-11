@@ -7,18 +7,25 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
+    <>
       <NavBar />
-      <Header />
-      <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-        Los Angeles, CA
-      </Typography>
-      <Typography variant="body1" sx={{ fontWeight: "medium" }}>
-        Full-stack engineer & digital marketing expert.
-        <br /> You can find me @eburdekin in most places.
-      </Typography>
+      <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
+        <Header />
+        <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+          Los Angeles, CA
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "medium" }}>
+          Full-stack engineer & digital marketing expert.
+          <br /> You can find me @eburdekin in most places.
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </Typography>
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 }
 
