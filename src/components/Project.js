@@ -23,6 +23,7 @@ export default function Project({ name, summary }) {
     bgcolor: "background.paper",
     border: "2px solid #000000",
     boxShadow: 24,
+    borderRadius: 5,
     p: 4,
     textAlign: "center",
   };
