@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   const navStyle = {
     padding: "10px",
+    maxWidth: "100%",
   };
 
   const linkStyle = {
