@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <Container maxWidth="md" sx={navStyle}>
       <a
-        href="mailto:hello@eileenburdekin.com"
+        href="mailto:eileenburdekin@proton.me"
         target="_blank"
         rel="noreferrer"
       >
