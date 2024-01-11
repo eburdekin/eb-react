@@ -3,7 +3,7 @@
 export default function Header() {
   return (
     <img
-      src="https://i.ibb.co/vdcTr5g/Eileen-Burdekin-4.png"
+      src="https://i.ibb.co/dQmVnL9/Eileen-Burdekin-5.png"
       alt="Eileen-Burdekin"
       border="0"
     />
