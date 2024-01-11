@@ -1,11 +1,12 @@
 import Typography from "@mui/material/Typography";
-import NavBar from "./NavBar";
-import Header from "./Header";
-import Footer from "./Footer";
+import Container from "@mui/material/Container";
+import NavBar from "../NavBar";
+import Header from "../Header";
+import Footer from "../Footer";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <Container maxWidth="md">
       <NavBar />
       <Header />
       <Typography variant="body1" sx={{ fontWeight: "medium" }}>
@@ -18,8 +19,8 @@ function App() {
       <Typography variant="body1">This is body text</Typography>
       <Typography variant="button">This is a button label</Typography>
       <Footer />
-    </div>
+    </Container>
   );
 }
 
-export default App;
+export default Home;
