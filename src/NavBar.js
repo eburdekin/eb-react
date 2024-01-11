@@ -1,15 +1,28 @@
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
+  const navStyle = {
+    padding: "10px",
+  };
+
+  const linkStyle = {
+    fontWeight: "bold",
+    textDecoration: "none",
+    color: "inherit",
+    margin: "5px",
+  };
+
   return (
-    <nav>
-      <NavLink
-        to="/"
-        /* add styling to Navlink */
-      >
+    <nav style={navStyle}>
+      <NavLink to="/" style={linkStyle}>
         Home
       </NavLink>
-      <NavLink to="/contact">Contact</NavLink>
+      <NavLink to="/work" style={linkStyle}>
+        Work
+      </NavLink>
+      <NavLink to="/contact" style={linkStyle}>
+        Contact
+      </NavLink>
     </nav>
   );
 }
