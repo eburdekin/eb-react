@@ -11,9 +11,11 @@ export default function Project({ name, summary, fullSummary, libraries }) {
 
   const boxStyle = {
     borderRadius: 5,
-    border: "2px solid black",
+    border: "1px solid black",
     padding: "5px",
     textAlign: "center",
+    height: "150px",
+    paddingTop: "30px",
   };
 
   const modalStyle = {
@@ -31,13 +33,13 @@ export default function Project({ name, summary, fullSummary, libraries }) {
   };
 
   const titleStyle = {
-    color: "#BF93B8",
+    color: "#AD9BBF",
     fontWeight: "bold",
   };
 
   const languageStyle = {
     backgroundColor: "lightgrey",
-    fontSize: "12px",
+    fontSize: "14px",
     borderRadius: "10px",
     padding: "5px",
     display: "inline-block", // Treat as an inline element that can have a width

@@ -1,9 +1,11 @@
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 
 export default function Header() {
   return (
-    <>
-      <Typography variant="h1">Eileen Burdekin</Typography>
-    </>
+    <img
+      src="https://i.ibb.co/vdcTr5g/Eileen-Burdekin-4.png"
+      alt="Eileen-Burdekin"
+      border="0"
+    />
   );
 }

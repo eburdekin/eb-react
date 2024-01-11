@@ -57,35 +57,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
       libraries: ["Python", "React"],
     },
-    {
-      name: "project7",
-      summary: "summary7",
-      fullSummary: `
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      `,
-      libraries: ["Python", "React"],
-    },
-    {
-      name: "project8",
-      summary: "summary8",
-      fullSummary: `
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      `,
-      libraries: ["Python", "React"],
-    },
   ];
 
   return (
-    <Container maxWidth="md" sx={{ width: "100%" }}>
+    <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
       <NavBar />
       {/* <Header /> */}
-      <Typography variant="h3" fontWeight="bold">
+      <Typography variant="h4" fontWeight="bold">
         Work
       </Typography>
       <Typography>Click on a project to see more.</Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} marginTop="20px">
         {projects.map((project) => (
-          <Grid xs={3} key={project.name}>
+          <Grid xs={4} key={project.name}>
             <Project
               name={project.name}
               summary={project.summary}

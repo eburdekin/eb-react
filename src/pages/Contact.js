@@ -11,13 +11,13 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
       <NavBar />
       {/* <Header /> */}
-      <Typography variant="h3" fontWeight="bold">
+      <Typography variant="h4" fontWeight="bold">
         Contact
       </Typography>
-      <FormControl sx={{ width: 400 }}>
+      <FormControl sx={{ width: 400, marginTop: "20px" }}>
         <TextField
           id="outlined-basic"
           label="Name"
