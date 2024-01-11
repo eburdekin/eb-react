@@ -1,3 +1,4 @@
+import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import NavBar from "../NavBar";
 // import Header from "../Header";
@@ -8,7 +9,7 @@ export default function Contact() {
     <Container maxWidth="md">
       <NavBar />
       {/* <Header /> */}
-      <h1>Contact</h1>
+      <Typography variant="h3">Contact</Typography>
       <p>Form will go here.</p>
       <Footer />
     </Container>

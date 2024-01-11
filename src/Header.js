@@ -1,7 +1,9 @@
+import Typography from "@mui/material/Typography";
+
 export default function Header() {
   return (
     <>
-      <h1>Eileen Burdekin</h1>
+      <Typography variant="h1">Eileen Burdekin</Typography>
     </>
   );
 }
