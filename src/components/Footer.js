@@ -15,7 +15,8 @@ export default function Footer() {
   };
 
   const iconStyle = {
-    color: "#027353",
+    // color: "#027353",
+    color: "black",
     margin: "5px",
   };
 

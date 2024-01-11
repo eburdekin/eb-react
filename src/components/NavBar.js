@@ -11,7 +11,8 @@ export default function NavBar() {
   const linkStyle = {
     fontWeight: "bold",
     fontFamily: "Figtree",
-    color: "#027353",
+    // color: "#027353",
+    color: "black",
     fontSize: 20,
     textDecoration: "none",
     margin: "5px",
