@@ -6,6 +6,7 @@ export default function Header() {
       src="https://i.ibb.co/dQmVnL9/Eileen-Burdekin-5.png"
       alt="Eileen-Burdekin"
       border="0"
+      style={{ maxWidth: "100%" }}
     />
   );
 }
