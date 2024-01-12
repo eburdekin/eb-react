@@ -17,9 +17,6 @@ function Home() {
         <Typography variant="body1" sx={{ fontWeight: "medium" }}>
           Full-stack engineer & digital marketing expert.
           <br /> You can find me @eburdekin in most places.
-          <br />
-          <br />
-          <br />
         </Typography>
       </Container>
       <Footer />
