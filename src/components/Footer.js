@@ -7,9 +7,10 @@ import Typography from "@mui/material/Typography";
 
 export default function Footer() {
   const navStyle = {
-    // paddingTop: "150px",
-    // position: "absolute",
-    // bottom: 0,
+    position: "fixed",
+    bottom: 0,
+    left: "50%",
+    transform: "translateX(-50%)",
     width: "100%",
     textAlign: "center",
   };
