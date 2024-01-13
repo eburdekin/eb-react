@@ -15,7 +15,7 @@ function Home() {
           Los Angeles, CA
         </Typography>
         <Typography variant="body1" sx={{ fontWeight: "medium" }}>
-          Full-stack engineer & digital marketing expert.
+          Full-stack developer & digital marketing expert.
           <br /> You can find me @eburdekin in most places.
         </Typography>
       </Container>
