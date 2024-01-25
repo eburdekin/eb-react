@@ -13,7 +13,6 @@ export default function NavBar() {
     fontFamily: "Figtree",
     // color: "#027353",
     color: "black",
-    fontSize: 20,
     textDecoration: "none",
     margin: "5px",
   };
