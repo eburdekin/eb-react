@@ -9,13 +9,21 @@ export default function Project({ name, summary, fullSummary, libraries }) {
   const [open, setOpen] = React.useState(false);
   const handleClick = () => setOpen(!open);
 
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
   const boxStyle = {
     borderRadius: 5,
     border: "1px solid black",
     padding: "5px",
+    // boxShadow: 3,
     textAlign: "center",
     height: "150px",
     paddingTop: "30px",
+    boxShadow: isHovered ? 8 : 3,
+    cursor: "pointer",
   };
 
   const modalStyle = {
@@ -33,22 +41,28 @@ export default function Project({ name, summary, fullSummary, libraries }) {
   };
 
   const titleStyle = {
-    color: "#AD9BBF",
+    // color: "#AD9BBF",
     fontWeight: "bold",
   };
 
   const languageStyle = {
     backgroundColor: "lightgrey",
     fontSize: "14px",
-    borderRadius: "10px",
-    padding: "5px",
+    borderRadius: "15px",
+    paddingLeft: "8px",
+    paddingRight: "8px",
     display: "inline-block", // Treat as an inline element that can have a width
     width: "fit-content",
     margin: "2px",
   };
 
   return (
-    <Box sx={boxStyle} onClick={handleClick}>
+    <Box
+      sx={boxStyle}
+      onClick={handleClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <Typography variant="h6" sx={titleStyle}>
         {name}
       </Typography>
