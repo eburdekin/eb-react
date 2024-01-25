@@ -5,7 +5,13 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
-export default function Project({ name, summary, fullSummary, libraries }) {
+export default function Project({
+  name,
+  blurb,
+  fullSummary,
+  libraries,
+  screenshot,
+}) {
   const [open, setOpen] = React.useState(false);
   const handleClick = () => setOpen(!open);
 
@@ -31,7 +37,7 @@ export default function Project({ name, summary, fullSummary, libraries }) {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width: 500,
     bgcolor: "background.paper",
     border: "2px solid #000000",
     boxShadow: 24,
@@ -66,7 +72,7 @@ export default function Project({ name, summary, fullSummary, libraries }) {
       <Typography variant="h6" sx={titleStyle}>
         {name}
       </Typography>
-      <Typography>{summary}</Typography>
+      <Typography>{blurb}</Typography>
       {libraries &&
         libraries.map((language) => (
           <Typography key={language} sx={languageStyle}>
@@ -83,7 +89,13 @@ export default function Project({ name, summary, fullSummary, libraries }) {
           <Typography id="modal-modal-title" variant="h4" sx={titleStyle}>
             {name}
           </Typography>
-          <Typography sx={{ fontWeight: "medium" }}>{summary}</Typography>
+          <Typography sx={{ fontWeight: "medium" }}>{blurb}</Typography>
+          <img
+            src={screenshot}
+            alt="screenshot"
+            width="450px"
+            height="auto"
+          ></img>
           {libraries &&
             libraries.map((language) => (
               <Typography key={language} sx={languageStyle}>
@@ -91,12 +103,6 @@ export default function Project({ name, summary, fullSummary, libraries }) {
               </Typography>
             ))}
           <Typography>{fullSummary}</Typography>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Eirik_Newth-A_sleeping_kitten-02.jpg"
-            alt="screenshot"
-            width="350px"
-            height="225px"
-          ></img>
         </Box>
       </Modal>
     </Box>

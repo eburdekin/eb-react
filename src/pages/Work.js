@@ -10,27 +10,33 @@ export default function Work() {
   const projects = [
     {
       name: "Send It!",
-      summary: "summary1",
+      blurb: "blurb",
       fullSummary: `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       `,
       libraries: ["Flask", "React"],
+      screenshot:
+        "https://camo.githubusercontent.com/0620ca6ca203f225c0a3c1d2f526848ed9ac5d80299bca49715865e656ab101c/68747470733a2f2f692e6962622e636f2f5352527756524a2f486f6d65706167652e706e67",
     },
     {
       name: "Karaoke Machine",
-      summary: "summary2",
+      blurb: "blurb",
       fullSummary: `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       `,
       libraries: ["Python", "rich"],
+      screenshot:
+        "https://github.com/eburdekin/karaoke-machine/raw/main/lib/img/menu.png",
     },
     {
       name: "flatTable",
-      summary: "summary3",
+      blurb: "blurb",
       fullSummary: `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       `,
       libraries: ["React"],
+      screenshot:
+        "https://github.com/eburdekin/flattable/raw/main/public/images/login.png",
     },
   ];
 
@@ -47,9 +53,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
           <Grid xs={4} key={project.name}>
             <Project
               name={project.name}
-              summary={project.summary}
+              blurb={project.blurb}
               fullSummary={project.fullSummary}
               libraries={project.libraries}
+              screenshot={project.screenshot}
             />
           </Grid>
         ))}
