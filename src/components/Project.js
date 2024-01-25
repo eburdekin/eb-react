@@ -21,9 +21,10 @@ export default function Project({
   const handleMouseLeave = () => setIsHovered(false);
 
   const boxStyle = {
-    borderRadius: 5,
-    border: "1px solid black",
+    borderRadius: 4,
+    border: "1.5px solid #AD9BBF",
     padding: "5px",
+    margin: "8px",
     // boxShadow: 3,
     textAlign: "center",
     height: "150px",
@@ -39,7 +40,7 @@ export default function Project({
     transform: "translate(-50%, -50%)",
     width: 500,
     bgcolor: "background.paper",
-    border: "2px solid #000000",
+    border: "1.5px solid #000000",
     boxShadow: 24,
     borderRadius: 5,
     p: 4,
