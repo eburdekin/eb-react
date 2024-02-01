@@ -40,7 +40,9 @@ export default function Footer() {
       >
         <FontAwesomeIcon icon={faLinkedin} size="2xl" style={iconStyle} />
       </a>
-      <Typography sx={{ fontSize: 14 }}>© Eileen Burdekin 2023</Typography>
+      <Typography sx={{ fontSize: 14 }}>
+        &copy; {new Date().getFullYear().toString()} Eileen Burdekin
+      </Typography>
       {/* </div> */}
     </Container>
   );
