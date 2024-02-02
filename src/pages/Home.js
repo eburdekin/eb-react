@@ -1,26 +1,19 @@
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-// import Grid from "@mui/material/Unstable_Grid2";
-import NavBar from "../components/NavBar";
-import Header from "../components/Header";
+import Logo from "../components/Logo";
+import Header from "../components/Logo";
 import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <>
-      <NavBar />
-      <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
-        <Header />
-        <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-          Los Angeles, CA
-        </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "medium" }}>
-          Full-stack developer & digital marketing expert.
-          <br /> You can find me @eburdekin in most places.
-        </Typography>
-      </Container>
+    <div className="flex flex-col min-h-screen text-center items-center mx-auto transition-opacity duration-1000 ease-in opacity-100">
+      {/* <NavBar /> */}
+      <Logo />
+      <p className="font-bold">Los Angeles, CA</p>
+      <p className="font-medium">
+        Full-stack developer & digital marketing expert.
+        <br /> You can find me @eburdekin in most places.
+      </p>
       <Footer />
-    </>
+    </div>
   );
 }
 

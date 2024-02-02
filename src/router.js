@@ -5,6 +5,6 @@ import Work from "./pages/Work";
 
 export const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  { path: "/work", element: <Work /> },
-  { path: "/contact", element: <Contact /> },
+  // { path: "/work", element: <Work /> },
+  // { path: "/contact", element: <Contact /> },
 ]);

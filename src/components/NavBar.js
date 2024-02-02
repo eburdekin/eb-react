@@ -1,33 +1,25 @@
-import { NavLink } from "react-router-dom";
-import Container from "@mui/material/Container";
+// import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Turn as Hamburger } from "hamburger-react";
 
 export default function NavBar() {
-  const navStyle = {
-    padding: "10px",
-    width: "100%",
-    textAlign: "center",
-  };
-
-  const linkStyle = {
-    fontWeight: "bold",
-    fontFamily: "Figtree",
-    // color: "#027353",
-    color: "black",
-    textDecoration: "none",
-    margin: "5px",
-  };
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <Container maxWidth="md" style={navStyle}>
-      <NavLink to="/" style={linkStyle}>
-        Home
-      </NavLink>
-      {/* <NavLink to="/work" style={linkStyle}>
+    <Hamburger toggled={isOpen} toggle={setOpen} />
+    // <div className="container mx-auto px-4 py-2 text-center">
+    //   <NavLink
+    //     to="/"
+    //     className="font-bold font-figtree text-black no-underline mr-5"
+    //   >
+    //     Home
+    //   </NavLink>
+    /* <NavLink to="/work" className="font-bold font-figtree text-black no-underline mr-5">
         Work
       </NavLink>
-      <NavLink to="/contact" style={linkStyle}>
+      <NavLink to="/contact" className="font-bold font-figtree text-black no-underline">
         Contact
-      </NavLink> */}
-    </Container>
+      </NavLink> */
+    // </div>
   );
 }

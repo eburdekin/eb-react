@@ -1,15 +1,15 @@
 import { createTheme } from "@mui/material/styles";
 
-import "@fontsource/figtree/400.css";
-import "@fontsource/figtree/500.css";
-import "@fontsource/figtree/600.css";
-import "@fontsource/figtree/700.css";
-import "@fontsource/figtree/800.css";
-import "@fontsource/figtree/900.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/inter/900.css";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Figtree",
+    fontFamily: "Inter",
     weightRegular: 400,
     weightMedium: 500,
     weightSemiBold: 600,
