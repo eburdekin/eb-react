@@ -1,6 +1,6 @@
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Unstable_Grid2";
+// import Typography from "@mui/material/Typography";
+// import Container from "@mui/material/Container";
+// import Grid from "@mui/material/Unstable_Grid2";
 import NavBar from "../components/NavBar";
 // import Header from "../Header";
 import Project from "../components/Project";
@@ -41,28 +41,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   ];
 
   return (
-    <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
-      <NavBar />
-      {/* <Header /> */}
-      <Typography variant="h4" fontWeight="bold">
-        Work
-      </Typography>
-      <Typography>Click on a project to see more.</Typography>
-      <Grid container spacing={2} marginTop="20px">
-        {projects.map((project) => (
-          <Grid xs={4} key={project.name}>
-            <Project
-              name={project.name}
-              blurb={project.blurb}
-              fullSummary={project.fullSummary}
-              libraries={project.libraries}
-              screenshot={project.screenshot}
-            />
-          </Grid>
-        ))}
-      </Grid>
-      <Footer />
-    </Container>
+    <>Hi</>
+    // <Container maxWidth="md" sx={{ width: "100%", textAlign: "center" }}>
+    //   <NavBar />
+    //   {/* <Header /> */}
+    //   <Typography variant="h4" fontWeight="bold">
+    //     Work
+    //   </Typography>
+    //   <Typography>Click on a project to see more.</Typography>
+    //   <Grid container spacing={2} marginTop="20px">
+    //     {projects.map((project) => (
+    //       <Grid xs={4} key={project.name}>
+    //         <Project
+    //           name={project.name}
+    //           blurb={project.blurb}
+    //           fullSummary={project.fullSummary}
+    //           libraries={project.libraries}
+    //           screenshot={project.screenshot}
+    //         />
+    //       </Grid>
+    //     ))}
+    //   </Grid>
+    //   <Footer />
+    // </Container>
   );
 }
 
