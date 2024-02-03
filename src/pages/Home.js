@@ -85,10 +85,10 @@ function Home() {
       </div>
       {showBackToTop && (
         <button
-          className="fixed bottom-8 right-8 bg-gray-300 rounded-full p-3 shadow-md hover:bg-gray-100"
+          className="fixed bottom-6 right-6 bg-white rounded-full p-1 shadow-md hover:bg-gray-300"
           onClick={scrollToTop}
         >
-          <FontAwesomeIcon icon={faArrowCircleUp} size="xl" className="mr-2" />
+          <FontAwesomeIcon icon={faArrowCircleUp} size="xl" />
         </button>
       )}
     </>
