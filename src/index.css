@@ -26,10 +26,6 @@ body {
 }
 
 .hover-effect:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   /* Make the div 5% bigger on hover */
-}
-
-.purple-background {
-  background-color: #ad9bbf99;
 }

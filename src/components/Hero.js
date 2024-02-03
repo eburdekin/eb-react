@@ -1,4 +1,4 @@
-export default function Logo() {
+export default function Hero() {
   return (
     <img
       src="https://i.ibb.co/dQmVnL9/Eileen-Burdekin-5.png"
