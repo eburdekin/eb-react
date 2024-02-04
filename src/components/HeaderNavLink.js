@@ -9,7 +9,7 @@ const HeaderNavLink = ({ href, closeMenu, children }) => {
       href={href}
       onClick={closeMenu}
       //   className="hover:bg-gray-100 p-2 rounded block"
-      className={"p-2 mb-6 rounded block font-bold hover:text-gray-300"}
+      className={"p-2 rounded block font-bold hover:text-gray-300"}
     >
       {children}
     </a>

@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import React, { useState, useEffect } from "react";
-import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -85,10 +85,10 @@ function Home() {
       </div>
       {showBackToTop && (
         <button
-          className="fixed bottom-6 right-6 bg-white rounded-full p-1 shadow-md hover:bg-gray-300"
+          className="fixed bottom-4 py-1 right-4 px-3 rounded-2xl bg-white shadow-lg hover:bg-gray-100"
           onClick={scrollToTop}
         >
-          <FontAwesomeIcon icon={faArrowCircleUp} size="xl" />
+          <FontAwesomeIcon icon={faArrowUp} size="2xl" />
         </button>
       )}
     </>
