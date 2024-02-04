@@ -2,7 +2,7 @@ import ReviewCard from "./ReviewCard";
 
 const Reviews = (props) => {
   return (
-    <section id="section-reviews" className="mt-10">
+    <section id="section-reviews" className="mt-4">
       <h2 className="text-4xl font-bold text-center justify-center w-max mx-auto p-2 pt-20 mb-6">
         Reviews
       </h2>
