@@ -2,8 +2,8 @@ import ReviewCard from "./ReviewCard";
 
 const Reviews = (props) => {
   return (
-    <section id="section-reviews" className="mt-4">
-      <h2 className="text-4xl font-bold text-center justify-center w-max mx-auto p-2 pt-20 mb-6">
+    <section id="section-reviews">
+      <h2 className="text-3xl md:text-4xl font-bold text-center justify-center w-max mx-auto p-2 pt-14 mt-4 mb-6">
         Reviews
       </h2>
       <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto">

@@ -50,7 +50,7 @@ export default function NavBar() {
       </nav>
       {isMenuOpen && (
         <div className="md:hidden fixed inset-x-0 top-0 bg-white shadow-lg z-50 pb-6">
-          <div className="flex flex-col items-center mt-12">
+          <div className="flex flex-col items-center mt-12 mb-4">
             {menuItems.map(({ url, label }, index) => (
               <HeaderNavLink key={index} href={url} closeMenu={closeMenu}>
                 {label}
