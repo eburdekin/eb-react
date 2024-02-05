@@ -7,7 +7,7 @@ export default function Hero() {
     // />
     <h1
       style={{ color: "#165634" }}
-      className="text-7xl font-bold py-40 max-w-sm"
+      className="text-7xl font-bold py-36 md:py-40 max-w-sm"
     >
       Eileen Burdekin
     </h1>
