@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
-import ContactIcons from "../components/ContactIcons";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,22 +35,6 @@ function Home() {
       <NavBar />
       <div className="pt-14 flex flex-col text-center items-center mx-auto transition-opacity duration-1000 ease-in opacity-100">
         <Hero />
-        <div
-          className="font-bold flex flex-row text-xl md:text-2xl mb-2"
-          style={{ color: "#165634" }}
-        >
-          <img
-            src="/location.svg"
-            alt="location pin"
-            className="inline-block w-8 md:w-10"
-          />
-          <p className="mt-1 md:mt-2">Los Angeles, CA</p>
-        </div>
-        <p className="md:text-lg">
-          Full-stack developer & digital marketing expert.
-          <br /> You can find me @eburdekin in most places.
-        </p>
-        <ContactIcons />
         <About />
         <Footer />
       </div>
