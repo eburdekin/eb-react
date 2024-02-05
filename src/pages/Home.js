@@ -33,7 +33,7 @@ function Home() {
   return (
     <div style={{ backgroundColor: "#BAD9D6" }}>
       <NavBar />
-      <div className="pt-14 flex flex-col text-center items-center mx-auto">
+      <div className="flex flex-col text-center items-center mx-auto">
         <Hero />
         <About />
         {/* <Contact /> */}
