@@ -1,11 +1,12 @@
+import SectionHeader from "./SectionHeader";
+import SectionSubHeader from "./SectionSubHeader";
 import ReviewCard from "./ReviewCard";
 
-const Reviews = (props) => {
+const About = (props) => {
   return (
-    <section id="section-reviews">
-      <h2 className="text-3xl md:text-4xl font-bold text-center justify-center w-max mx-auto p-2 pt-14 md:marker:mt-4 mb-6">
-        Reviews
-      </h2>
+    <section id="section-about">
+      <SectionHeader>About</SectionHeader>
+      <SectionSubHeader>Reviews</SectionSubHeader>
       <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto">
         <ReviewCard
           image="../KellyReilly.jpeg"
@@ -59,8 +60,7 @@ const Reviews = (props) => {
               campaigns across 3-5 platforms each quarter, she just does it -
               and she lets her work show for itself. I attribute most of what I
               have learned in digital media to my time spent working alongside
-              Eileen. She is patient as well as demanding - she knows when to
-              add to your plate and she knows when to jump in and help.
+              Eileen.
             </p>
             <p className="mb-4">
               If you are looking for someone who is organized, handles
@@ -74,4 +74,4 @@ const Reviews = (props) => {
   );
 };
 
-export default Reviews;
+export default About;

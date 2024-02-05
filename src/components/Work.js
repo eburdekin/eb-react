@@ -1,10 +1,10 @@
 // import Typography from "@mui/material/Typography";
 // import Container from "@mui/material/Container";
 // import Grid from "@mui/material/Unstable_Grid2";
-import NavBar from "../components/NavBar";
+import NavBar from "./NavBar";
 // import Header from "../Header";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
+import Project from "./Project";
+import Footer from "./Footer";
 
 export default function Work() {
   const projects = [
