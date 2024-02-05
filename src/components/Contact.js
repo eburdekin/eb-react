@@ -2,7 +2,7 @@
 // import Container from "@mui/material/Container";
 // import NavBar from "../components/NavBar";
 // import Header from "../Header";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 // import TextField from "@mui/material/TextField";
 // import Button from "@mui/material/Button";
 // import FormControl from "@mui/material/FormControl";
