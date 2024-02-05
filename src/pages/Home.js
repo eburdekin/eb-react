@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import About from "../components/About";
+// import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
@@ -30,12 +31,12 @@ function Home() {
   };
 
   return (
-    // <>
     <div style={{ backgroundColor: "#BAD9D6" }}>
       <NavBar />
-      <div className="pt-14 flex flex-col text-center items-center mx-auto transition-opacity duration-1000 ease-in opacity-100">
+      <div className="pt-14 flex flex-col text-center items-center mx-auto">
         <Hero />
         <About />
+        {/* <Contact /> */}
         <Footer />
       </div>
       {showBackToTop && (
@@ -52,8 +53,6 @@ function Home() {
         </button>
       )}
     </div>
-
-    // </>
   );
 }
 

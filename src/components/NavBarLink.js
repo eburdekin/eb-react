@@ -1,6 +1,6 @@
 // import { NavLink } from "react-router-dom";
 
-const HeaderNavLink = ({ href, closeMenu, children }) => {
+const NavBarLink = ({ href, closeMenu, children }) => {
   const pathname = window.location.pathname;
   const active = pathname.startsWith(href);
 
@@ -17,4 +17,4 @@ const HeaderNavLink = ({ href, closeMenu, children }) => {
   );
 };
 
-export default HeaderNavLink;
+export default NavBarLink;
