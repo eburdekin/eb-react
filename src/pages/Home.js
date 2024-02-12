@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
-import Content from "../components/Content";
+import Page from "../components/Page";
 // import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -18,7 +18,7 @@ function Home() {
           </div>
         </div>
         <div className="w-full md:w-2/3 overflow-auto">
-          <Content />
+          <Page />
         </div>
       </div>
 

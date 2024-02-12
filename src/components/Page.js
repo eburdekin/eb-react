@@ -1,12 +1,12 @@
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 import React, { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
-export default function Content() {
+export default function Page() {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {

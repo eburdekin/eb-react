@@ -15,7 +15,7 @@ export default function Hero() {
         <img
           src="/location.svg"
           alt="location pin"
-          className="inline-block w-8 md:w-10" // Add margin-right for spacing
+          className="inline-block w-7 md:w-8" // Add margin-right for spacing
         />
         <p className="mt-1 md:mt-2">Los Angeles, CA</p>
       </div>
