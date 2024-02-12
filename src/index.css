@@ -30,3 +30,9 @@ body {
   transform: scale(1.2);
   /* Make the div 5% bigger on hover */
 }
+
+
+@font-face {
+  font-family: 'Rosalia';
+  src: url('../src/fonts/Rosalia.otf') format('opentype'),
+}

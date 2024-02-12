@@ -1,7 +1,7 @@
 const ReviewCard = (props) => {
   return (
     <div
-      className="card text-center border mx-8 mb-10 max-w-xs shadow-md bg-white rounded-2xl"
+      className="card text-center border mx-8 mb-10 max-w-sm shadow-md bg-white rounded-2xl"
       style={{ borderColor: "#165634" }}
     >
       <div className="w-full h-36 bg-gray-200 flex items-center justify-around neutral rounded-t-2xl">
