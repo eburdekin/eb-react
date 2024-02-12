@@ -5,7 +5,8 @@ import Reviews from "./Reviews";
 const About = ({ props }) => {
   return (
     <section id="section-about">
-      <SectionH2>About</SectionH2>
+      {/* <SectionH2>About</SectionH2> */}
+      {/* <div></div> */}
       <SectionH3>Reviews</SectionH3>
       <Reviews />
     </section>

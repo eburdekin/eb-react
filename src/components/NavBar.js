@@ -14,15 +14,15 @@ export default function NavBar() {
   };
 
   const menuItems = [
-    // { label: `Home`, url: `/#` },
-    { label: `Projects`, url: `/#section-projects` },
-    { label: `About`, url: `/#section-about` },
+    { label: `Home`, url: `/#` },
+    // { label: `Projects`, url: `/#section-projects` },
+    { label: `Reviews`, url: `/#section-about` },
     { label: `Contact`, url: `/#section-contact` },
   ];
 
   return (
     <>
-      <nav className="fixed md:w-full z-50 bg-white bg-opacity-95 top-0 right-0">
+      <nav className="fixed md:w-full bg-white bg-opacity-95 z-50 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
             <div className="items-center"></div>

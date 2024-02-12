@@ -18,9 +18,27 @@ code {
 
 body {
   font-family: 'Lato';
-  background-color: "#BAD9D6"
+  /* background-color: "#294037";
+  color: "#ffffff" */
+  /* background: linear-gradient(-45deg, #8ddbdd, #6abbd9, #87a0f1);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite; */
 }
 
+/* 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
 
 .hover-effect {
   transition: transform 0.3s ease;
@@ -32,8 +50,8 @@ body {
   /* Make the div 5% bigger on hover */
 }
 
-
+/* 
 @font-face {
   font-family: 'Rosalia';
   src: url('../src/fonts/Rosalia.otf') format('opentype'),
-}
+} */
