@@ -7,7 +7,7 @@ const About = ({ props }) => {
     <section id="section-about">
       {/* <SectionH2>About</SectionH2> */}
       {/* <div></div> */}
-      <SectionH3>Reviews</SectionH3>
+      <SectionH2>Reviews</SectionH2>
       <Reviews />
     </section>
   );

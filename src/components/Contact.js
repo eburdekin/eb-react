@@ -32,15 +32,16 @@ const Contact = () => {
     <section id="section-contact">
       <SectionH2>Contact</SectionH2>
       <p className="mt-3">
-        Click{" "}
+        Email me{" "}
         <a
           href="mailto:eileenburdekin@proton.me"
           target="_blank"
           rel="noreferrer"
+          className="text-black font-bold hover:text-gray-300"
         >
           here
         </a>{" "}
-        to email me or message me here:
+        or message me below:
       </p>
       <div className="mx-auto">
         <form onSubmit={handleSubmit} className="mt-10">
