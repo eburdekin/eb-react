@@ -11,15 +11,7 @@ export default function Hero() {
           consultancy, and in-house capacities.
         </p>
       </div>
-      <div className="my-14">
-        <button className="border-2 rounded-xl p-1 my-2">
-          Download my resume
-        </button>
-        <br />
-        <button className="border-2 rounded-xl p-1 my-2">Email me</button>
-      </div>
-      <div>Menu items</div>
-      <div className="font-bold flex items-center text-xl md:text-2xl mb-2">
+      <div className="font-bold flex items-center text-lg md:text-xl mb-2">
         <img
           src="/location.svg"
           alt="location pin"
@@ -27,6 +19,14 @@ export default function Hero() {
         />
         <p className="mt-1 md:mt-2">Los Angeles, CA</p>
       </div>
+      <div className="my-14">
+        <button className="border-2 rounded-xl p-1 my-2">
+          Download my resume
+        </button>
+        <br />
+        <button className="border-2 rounded-xl p-1 my-2">Email me</button>
+      </div>
+
       <div className="mt-4 flex items-center justify-center">
         <ContactIcons />
       </div>

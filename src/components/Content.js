@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 import React, { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +11,7 @@ export default function Content() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 300) {
         setShowBackToTop(true);
       } else {
         setShowBackToTop(false);
@@ -28,9 +29,10 @@ export default function Content() {
   };
 
   return (
-    <>
+    <div className="p-6 md:p-10">
       <Projects />
       <About />
+      <Contact />
       {showBackToTop && (
         <button
           className="fixed bottom-4 py-1 right-4 px-3 rounded-2xl shadow-md hover:bg-gray-100"
@@ -39,6 +41,6 @@ export default function Content() {
           <FontAwesomeIcon icon={faArrowUp} size="2xl" />
         </button>
       )}
-    </>
+    </div>
   );
 }

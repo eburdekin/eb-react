@@ -14,13 +14,15 @@ export default function NavBar() {
   };
 
   const menuItems = [
-    { label: `Home`, url: `/#` },
+    // { label: `Home`, url: `/#` },
+    { label: `Projects`, url: `/#section-projects` },
     { label: `About`, url: `/#section-about` },
+    { label: `Contact`, url: `/#section-contact` },
   ];
 
   return (
     <>
-      <nav className="fixed md:w-full z-50 top-0 right-0">
+      <nav className="fixed md:w-full z-50 bg-white bg-opacity-95 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
             <div className="items-center"></div>
@@ -35,7 +37,7 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-0 z-50 pb-6">
+        <div className="md:hidden fixed bg-white bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
           <div className="flex flex-col items-center mt-12 mb-4">
             {menuItems.map(({ url, label }, index) => (
               <NavBarLink key={index} href={url} closeMenu={closeMenu}>

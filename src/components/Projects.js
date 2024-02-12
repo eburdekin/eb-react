@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="section-about">
+    <section id="section-projects">
       <SectionH2>Projects</SectionH2>
       <SectionH3>FilmClub</SectionH3>
       <ProjectCard />

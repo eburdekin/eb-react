@@ -12,12 +12,12 @@ function Home() {
       <NavBar />
 
       <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/3">
           <div className="md:fixed md:top-0 h-full overflow-auto">
             <Hero />
           </div>
         </div>
-        <div className="w-full md:w-1/2 overflow-auto">
+        <div className="w-full md:w-2/3 overflow-auto">
           <Content />
         </div>
       </div>
