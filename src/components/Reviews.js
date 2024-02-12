@@ -2,7 +2,7 @@ import ReviewCard from "./ReviewCard";
 
 export default function Reviews() {
   return (
-    <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto">
+    <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto mb-16">
       <ReviewCard
         image="../KellyReilly.jpeg"
         goTo="https://www.linkedin.com/in/eburdekin/"
