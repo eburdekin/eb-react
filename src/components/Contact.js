@@ -33,21 +33,24 @@ const Contact = () => {
   return (
     <section id="section-contact">
       <SectionH2>Contact</SectionH2>
-      <p className="mt-3">
-        Email me{" "}
-        <a
-          href="mailto:eileenburdekin@proton.me"
-          target="_blank"
-          rel="noreferrer"
-          className="text-black font-bold hover:text-gray-300"
+      <div className="mx-auto flex flex-col items-center">
+        <p className="mt-3">
+          Email me{" "}
+          <a
+            href="mailto:eileenburdekin@proton.me"
+            target="_blank"
+            rel="noreferrer"
+            className="text-black font-bold hover:text-gray-300"
+          >
+            here
+          </a>{" "}
+          or message me below:
+        </p>
+        <p>{message ? `${message}` : null}</p>
+        <form
+          onSubmit={handleSubmit}
+          className="mt-10 flex flex-col items-center"
         >
-          here
-        </a>{" "}
-        or message me below:
-      </p>
-      <p>{message ? `${message}` : null}</p>
-      <div className="mx-auto">
-        <form onSubmit={handleSubmit} className="mt-10">
           <input
             type="hidden"
             name="subject"
