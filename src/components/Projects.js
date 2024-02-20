@@ -6,31 +6,35 @@ export default function Projects() {
   return (
     <section id="section-projects">
       <SectionH2>Projects</SectionH2>
-      <ProjectCard
-        image="../images/filmclub.gif"
-        projectName="Film Club"
-        projectBlurb="Hellooo"
-        github=""
-        demo=""
-      >
-        <div className="text-sm m-5">
-          <p className="mb-4">
-            "If you're reading this and considering hiring Eileen, I can only
-            say that I hope I beat you to it! Eileen is the single most
-            adaptable, exceptional talent I have ever worked with.
-          </p>
-          <p className="mb-4">
-            A combination of tactical precision and a polished, client-friendly
-            nature made her a standout talent for client-services roles; her
-            trajectory in taking on increasing responsibility was exponential.
-          </p>
-          <p className="mb-4">
-            One of the biggest wins in our agency's history was due in
-            no-small-part to Eileen's work ethic and capacity to work rungs
-            above her duties.”
-          </p>
-        </div>
-      </ProjectCard>
+      <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto mb-16">
+        <ProjectCard
+          image1="../images/filmclub1.gif"
+          image2="../images/filmclubdb.png"
+          projectName="FilmClub"
+          projectBlurb="Always screening near you."
+          github="https://github.com/eburdekin/film-club-react"
+          demo="https://www.loom.com/share/13adaf09f1d946abae49477271323fbc?sid=e215cd12-2c46-49d4-9756-263dffcbe675"
+        >
+          <div className="text-sm m-5 flex flex-col justify-center gap-4">
+            <p></p>
+            <p>Front-end</p>
+            <p>
+              - Fully-responsive React app with nested layouts and dark mode
+              built with Tailwind CSS
+              <br />
+              - Global user state management with React's useContext hook
+              <br />- Modals using Formik for validating user data entry Backend
+            </p>
+            <p>Back-end</p>
+            <p>
+              - Flask app built with SQLAlchemy and Flask-Restful
+              <br />
+              - Bcrypt for password hashing and user authentication
+              <br />- Marshmallow for serialization and validation
+            </p>
+          </div>
+        </ProjectCard>
+      </div>
     </section>
   );
 }

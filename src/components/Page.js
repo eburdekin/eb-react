@@ -30,7 +30,7 @@ export default function Page() {
 
   return (
     <div className="p-6 md:p-10">
-      {/* <Projects /> */}
+      <Projects />
       <About />
       <Contact />
       {showBackToTop && (

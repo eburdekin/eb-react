@@ -8,8 +8,8 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl font-bold">Eileen Burdekin</h1>
         <h2 className="text-2xl md:text-3xl font-bold">Full-stack Developer</h2>
         <p className="md:text-lg my-4">
-          Digital advertising expert with 8+ years experience in agency,
-          consultancy, and in-house capacities.
+          Software engineer with 8+ years of digital advertising expertise and a
+          proven record of delivering results on-deadline and under budget.
         </p>
       </div>
       <div className="font-bold flex items-center text-lg md:text-xl mb-2">

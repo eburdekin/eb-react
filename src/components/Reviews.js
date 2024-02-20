@@ -14,18 +14,18 @@ export default function Reviews() {
           </>
         }
       >
-        <div className="text-sm m-5">
-          <p className="mb-4">
+        <div className="text-sm m-5 flex flex-col justify-center gap-4">
+          <p>
             "If you're reading this and considering hiring Eileen, I can only
             say that I hope I beat you to it! Eileen is the single most
             adaptable, exceptional talent I have ever worked with.
           </p>
-          <p className="mb-4">
+          <p>
             A combination of tactical precision and a polished, client-friendly
             nature made her a standout talent for client-services roles; her
             trajectory in taking on increasing responsibility was exponential.
           </p>
-          <p className="mb-4">
+          <p>
             One of the biggest wins in our agency's history was due in
             no-small-part to Eileen's work ethic and capacity to work rungs
             above her duties.”
