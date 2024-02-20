@@ -46,7 +46,6 @@ const Contact = () => {
           </a>{" "}
           or message me below:
         </p>
-        <p>{message ? `${message}` : null}</p>
         <form
           onSubmit={handleSubmit}
           className="mt-10 flex flex-col items-center"
@@ -92,9 +91,12 @@ const Contact = () => {
               </label>
             </div>
           </div>
+          <p className="text-sm mt-4" style={{ color: "#09abb0" }}>
+            {message ? `${message}` : null}
+          </p>
           <button
             type="submit"
-            className="mt-5 rounded-md bg-black px-10 py-2 text-white"
+            className="mt-2 rounded-md bg-black px-10 py-2 text-white"
           >
             Send
           </button>
