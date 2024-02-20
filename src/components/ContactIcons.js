@@ -7,11 +7,7 @@ export default function ContactIcons() {
   const iconStyle = "text-black m-2 hover-effect";
   return (
     <div className="items-center">
-      <a
-        href="mailto:eileenburdekin@proton.me"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href="mailto:eburdekin@proton.me" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faEnvelope} size="2x" className={iconStyle} />
       </a>
       <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">

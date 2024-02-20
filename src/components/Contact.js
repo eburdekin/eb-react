@@ -1,14 +1,16 @@
 import SectionH2 from "./SectionH2";
 import SectionH3 from "./SectionH3";
+import { useState } from "react";
 
 const ACCESS_KEY = "46845829-dc1a-4911-914b-c17c6fa698f1";
 
 const Contact = () => {
-  const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+  const [message, setMessage] = useState(null);
 
-    // Access the form data and handle submission here
-    const formData = new FormData(event.target);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -17,15 +19,15 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        // Handle successful form submission
-        console.log("Form submitted successfully!");
+        setMessage("Form submitted successfully!");
       } else {
-        // Handle failed form submission
-        console.error("Form submission failed");
+        setMessage("Form submission failed");
       }
     } catch (error) {
-      console.error("An error occurred while submitting the form:", error);
+      setMessage("An error occurred while submitting the form:", error);
     }
+
+    e.target.reset();
   };
 
   return (
@@ -43,6 +45,7 @@ const Contact = () => {
         </a>{" "}
         or message me below:
       </p>
+      <p>{message ? `${message}` : null}</p>
       <div className="mx-auto">
         <form onSubmit={handleSubmit} className="mt-10">
           <input type="hidden" name="access_key" value={ACCESS_KEY} />
