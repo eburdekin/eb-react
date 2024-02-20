@@ -2,7 +2,7 @@ import ContactIcons from "../components/ContactIcons";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col p-6 md:p-10">
+    <div className="flex flex-col p-6 md:p-10 min-h-screen">
       {/* <div className="flex flex-col p-6 md:p-10"> */}
       <div className="pt-32 md:pt-40 max-w-sm">
         <h1 className="text-4xl md:text-5xl font-bold">Eileen Burdekin</h1>
@@ -34,7 +34,7 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="mt-12 flex items-center justify-center">
+      <div className="mt-4 flex items-center justify-center">
         <ContactIcons />
       </div>
     </div>
