@@ -38,7 +38,7 @@ export default function Page() {
           className="fixed bottom-4 py-1 right-4 px-3 rounded-2xl shadow-md hover:bg-gray-100"
           onClick={scrollToTop}
         >
-          <FontAwesomeIcon icon={faArrowUp} size="2xl" />
+          <FontAwesomeIcon icon={faArrowUp} size="2xl" color="white" />
         </button>
       )}
     </div>

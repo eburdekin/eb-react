@@ -1,10 +1,7 @@
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import Page from "../components/Page";
-// import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
-import React, { useState, useEffect } from "react";
 
 function Home() {
   return (

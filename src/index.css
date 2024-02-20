@@ -25,7 +25,19 @@ body {
   animation: gradient 10s ease infinite; */
 }
 
-/* 
+h1 {
+  background: -webkit-linear-gradient(-45deg, #09abb0, #2d96bc, #2f52c3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  background: linear-gradient(-45deg, #09abb0, #2d96bc, #2f52c3);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -38,7 +50,7 @@ body {
   100% {
     background-position: 0% 50%;
   }
-} */
+}
 
 .hover-effect {
   transition: transform 0.3s ease;

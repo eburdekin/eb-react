@@ -16,7 +16,7 @@ const ReviewCard = (props) => {
           href={props.goTo}
           target="_blank"
           rel="noreferrer"
-          className="py-2 px-4 bg-gray-200 text-sm font-bold shadow-md rounded-2xl"
+          className="mt-5 rounded-md text-sm bg-black px-4 py-2 text-white"
         >
           Read it on LinkedIn
         </a>

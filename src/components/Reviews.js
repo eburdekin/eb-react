@@ -4,7 +4,7 @@ export default function Reviews() {
   return (
     <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto">
       <ReviewCard
-        image="../KellyReilly.jpeg"
+        image="../images/KellyReilly.jpeg"
         goTo="https://www.linkedin.com/in/eburdekin/"
         personName="Kelly Reilly"
         jobPosition={
@@ -33,7 +33,7 @@ export default function Reviews() {
         </div>
       </ReviewCard>
       <ReviewCard
-        image="../JakeBishop.jpeg"
+        image="../images/JakeBishop.jpeg"
         goTo="https://www.linkedin.com/in/eburdekin/"
         personName="Jake Bishop"
         jobPosition={

@@ -14,19 +14,25 @@ export default function Hero() {
       </div>
       <div className="font-bold flex items-center text-lg md:text-xl mb-2">
         <img
-          src="/location.svg"
+          src="../images/location.svg"
           alt="location pin"
-          className="inline-block w-7 md:w-8" // Add margin-right for spacing
+          className="inline-block w-7 md:w-8"
         />
         <p className="mt-1 md:mt-2">Los Angeles, CA</p>
       </div>
-      {/* <div className="my-14">
-        <button className="border-2 rounded-xl p-1 my-2">
-          Download my resume
-        </button>
+      <div className="my-14">
+        <a href="../docs/resume.pdf">
+          <button className="rounded-xl shadow-md font-bold p-2 my-2 text-white">
+            Download my resume
+          </button>
+        </a>
         <br />
-        <button className="border-2 rounded-xl p-1 my-2">Email me</button>
-      </div> */}
+        <a href="https://www.linkedin.com/in/eburdekin/">
+          <button className="rounded-xl shadow-md font-bold p-2 my-2 text-white">
+            Connect on LinkedIn
+          </button>
+        </a>
+      </div>
 
       <div className="mt-12 flex items-center justify-center">
         <ContactIcons />

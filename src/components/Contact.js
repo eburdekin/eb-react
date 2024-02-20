@@ -48,6 +48,11 @@ const Contact = () => {
       <p>{message ? `${message}` : null}</p>
       <div className="mx-auto">
         <form onSubmit={handleSubmit} className="mt-10">
+          <input
+            type="hidden"
+            name="subject"
+            value="Contacted via eileenburdekin.com!"
+          />
           <input type="hidden" name="access_key" value={ACCESS_KEY} />
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="relative z-0">
