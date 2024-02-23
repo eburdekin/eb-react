@@ -35,16 +35,20 @@ export default function Projects() {
               Letterboxd to allow for groups.
             </p>
             <p>
-              <b>Frontend:</b> Fully-responsive React app with nested layouts
-              and dark mode built using Tailwind CSS. Global user state
+              <b>Frontend:</b> Fully-responsive{" "}
+              <span style={highlighted}>React</span> app with nested layouts and
+              dark mode built using{" "}
+              <span style={highlighted}>Tailwind CSS</span>. Global user state
               management is implemented with React's useContext hook. Modals
-              utilize Formik for validating user data entry.
+              utilize <span style={highlighted}>Formik</span> for validating
+              user data entry.
             </p>
             <p>
-              <b>Backend:</b> Flask app constructed with SQLAlchemy and
-              Flask-Restful. Bcrypt is employed for password hashing and user
-              authentication. Marshmallow is used for serialization and
-              validation.
+              <b>Backend:</b> <span style={highlighted}>Flask-Restful </span>app
+              API built with <span style={highlighted}>SQLAlchemy</span>.{" "}
+              Password hashing and user authentication through{" "}
+              <span style={highlighted}>bcrypt</span>. Serialization and
+              validation via <span style={highlighted}>Marshmallow</span>.
             </p>
           </div>
         </ProjectCard>
