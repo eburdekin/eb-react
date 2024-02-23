@@ -1,6 +1,6 @@
 const ReviewCard = (props) => {
   return (
-    <div className="card text-center border mb-10 max-w-xs shadow-md bg-white rounded-2xl">
+    <div className="text-center border mb-10 max-w-xs bg-white rounded-2xl">
       <div className="w-full h-36 bg-gray-200 flex items-center justify-around neutral rounded-t-2xl">
         <img src={props.image} className="h-20 w-20 rounded-full" alt="" />
         <div className="text-left w-44">

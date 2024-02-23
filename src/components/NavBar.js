@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed md:w-full bg-white bg-opacity-95 z-50 top-0 right-0">
+      <nav className="fixed md:w-full bg-black text-white bg-opacity-95 z-50 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
             <div className="items-center"></div>
@@ -37,7 +37,7 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden fixed bg-white bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
+        <div className="md:hidden fixed bg-black text-white bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
           <div className="flex flex-col items-center mt-12 mb-4">
             {menuItems.map(({ url, label }, index) => (
               <NavBarLink key={index} href={url} closeMenu={closeMenu}>
@@ -47,8 +47,8 @@ export default function NavBar() {
           </div>
         </div>
       )}
-      <div className="md:hidden fixed top-4 right-4 z-50 rounded-2xl shadow-md">
-        <Hamburger toggled={isMenuOpen} toggle={toggleMenu} />
+      <div className="md:hidden fixed top-4 right-4 z-50 rounded-2xl shadow-md bg-black">
+        <Hamburger toggled={isMenuOpen} toggle={toggleMenu} color="#49d6db" />
       </div>
     </>
   );

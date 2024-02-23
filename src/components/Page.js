@@ -35,10 +35,10 @@ export default function Page() {
       <Contact />
       {showBackToTop && (
         <button
-          className="fixed bottom-4 py-1 right-4 px-3 rounded-2xl shadow-md hover:bg-gray-100"
+          className="fixed bottom-5 py-1 right-4 px-3 rounded bg-black"
           onClick={scrollToTop}
         >
-          <FontAwesomeIcon icon={faArrowUp} size="2xl" color="white" />
+          <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#49d6db" />
         </button>
       )}
     </div>

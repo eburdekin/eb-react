@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactIcons() {
-  const iconStyle = "text-black m-2 hover-effect";
+  const iconStyle = "text-white m-2 hover-effect";
   return (
     <div className="items-center">
       <a href="mailto:eburdekin@proton.me" target="_blank" rel="noreferrer">

@@ -3,6 +3,10 @@ import SectionH2 from "./SectionH2";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
+  const highlighted = {
+    color: "#49d6db",
+  };
+
   return (
     <section id="section-projects">
       <SectionH2>Projects</SectionH2>
@@ -15,22 +19,32 @@ export default function Projects() {
           github="https://github.com/eburdekin/film-club-react"
           demo="https://www.loom.com/share/13adaf09f1d946abae49477271323fbc?sid=e215cd12-2c46-49d4-9756-263dffcbe675"
         >
-          <div className="text-sm m-5 flex flex-col justify-center gap-4">
-            <p></p>
-            <p>Front-end</p>
+          <div className="flex flex-col justify-center gap-4 mt-3">
             <p>
-              - Fully-responsive React app with nested layouts and dark mode
-              built with Tailwind CSS
-              <br />
-              - Global user state management with React's useContext hook
-              <br />- Modals using Formik for validating user data entry Backend
+              Film clubs are back - ask the{" "}
+              <a
+                href="https://www.nytimes.com/2024/02/01/movies/nyc-movie-clubs.html"
+                target="_blank"
+                rel="noreferrer"
+                style={highlighted}
+              >
+                New York Times!
+              </a>{" "}
+              FilmClub is a social hub for film buffs to meet and discuss their
+              favorite films. I wanted to build on the functionality of
+              Letterboxd to allow for groups.
             </p>
-            <p>Back-end</p>
             <p>
-              - Flask app built with SQLAlchemy and Flask-Restful
-              <br />
-              - Bcrypt for password hashing and user authentication
-              <br />- Marshmallow for serialization and validation
+              <b>Frontend:</b> Fully-responsive React app with nested layouts
+              and dark mode built using Tailwind CSS. Global user state
+              management is implemented with React's useContext hook. Modals
+              utilize Formik for validating user data entry.
+            </p>
+            <p>
+              <b>Backend:</b> Flask app constructed with SQLAlchemy and
+              Flask-Restful. Bcrypt is employed for password hashing and user
+              authentication. Marshmallow is used for serialization and
+              validation.
             </p>
           </div>
         </ProjectCard>
