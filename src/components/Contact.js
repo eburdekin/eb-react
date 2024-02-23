@@ -55,10 +55,10 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600"
+                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-cyan-600"
                   placeholder=" "
                 />
-                <label className="absolute top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500">
                   Your name
                 </label>
               </div>
@@ -69,10 +69,10 @@ const Contact = () => {
                 <input
                   type="text"
                   name="email"
-                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600"
+                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-cyan-600"
                   placeholder=" "
                 />
-                <label className="absolute top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500">
                   Your email
                 </label>
               </div>
@@ -83,10 +83,10 @@ const Contact = () => {
                 <textarea
                   name="message"
                   rows="5"
-                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600"
+                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-cyan-600"
                   placeholder=" "
                 ></textarea>
-                <label className="absolute top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
+                <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500">
                   Your message
                 </label>
               </div>

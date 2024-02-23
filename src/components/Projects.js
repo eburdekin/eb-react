@@ -32,7 +32,7 @@ export default function Projects() {
               </a>{" "}
               FilmClub is a social hub for film buffs to meet and discuss their
               favorite films. I wanted to build on the functionality of
-              Letterboxd to allow for groups.
+              Letterboxd to allow for group discussions.
             </p>
             <p>
               <b>Frontend:</b> Fully-responsive{" "}
