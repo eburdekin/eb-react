@@ -17,17 +17,17 @@ export default function Projects() {
         >
           <div className="flex flex-col justify-center gap-4 mt-3">
             <p>
-              Film clubs are back - ask the{" "}
+              Film clubs are back - just ask the{" "}
               <a
                 href="https://www.nytimes.com/2024/02/01/movies/nyc-movie-clubs.html"
                 target="_blank"
                 rel="noreferrer"
-                className="highlighted"
+                className="highlighted underline"
               >
-                New York Times!
-              </a>{" "}
-              FilmClub is a social hub for film buffs to meet and discuss their
-              favorite films. I wanted to build on the functionality of
+                New York Times
+              </a>
+              ! FilmClub is a social hub for film buffs to meet and discuss
+              their favorite films. I wanted to build on the functionality of
               Letterboxd to allow for group discussions.
             </p>
             <p>

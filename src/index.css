@@ -30,7 +30,7 @@ h1 {
 button {
   color: #49d6db;
   border: 1px solid #49d6db;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 button:hover {
