@@ -47,9 +47,9 @@ export default function NavBar() {
           </div>
         </div>
       )}
-      <div className="md:hidden fixed top-4 right-4 z-50 rounded-2xl shadow-md bg-black">
+      <button className="md:hidden fixed top-4 right-4 z-50 rounded shadow-md bg-black">
         <Hamburger toggled={isMenuOpen} toggle={toggleMenu} color="#49d6db" />
-      </div>
+      </button>
     </>
   );
 }
