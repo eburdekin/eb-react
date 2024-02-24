@@ -8,9 +8,7 @@ const NavBarLink = ({ href, closeMenu, children }) => {
     <a
       href={href}
       onClick={closeMenu}
-      //   className="hover:bg-gray-100 p-2 rounded block"
-      // style={{ color: "#165634" }}
-      className={"p-2 mt-1 mb-1 rounded block font-bold hover:text-gray-300"}
+      className={"nav-link p-2 mt-1 mb-1 rounded block font-bold"}
     >
       {children}
     </a>

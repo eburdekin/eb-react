@@ -12,13 +12,10 @@ const ReviewCard = (props) => {
         {props.children}
       </div>
       <div className="justify-center my-6">
-        <a
-          href={props.goTo}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-5 rounded-md text-sm bg-black px-4 py-2 text-white"
-        >
-          Read it on LinkedIn
+        <a href={props.goTo} target="_blank" rel="noreferrer">
+          <button className="mt-5 rounded-md text-sm bg-black px-4 py-2 text-white">
+            Read it on LinkedIn
+          </button>
         </a>
       </div>
     </div>

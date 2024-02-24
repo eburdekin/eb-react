@@ -18,24 +18,16 @@ code {
 
 body {
   font-family: "Lato";
-  /* background-color: "#294037";
-  color: "#ffffff" */
-  /* background: linear-gradient(-45deg, #8ddbdd, #6abbd9, #87a0f1);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite; */
 }
 
 h1 {
-  background: -webkit-linear-gradient(-45deg, #49d6db, #41acd4, #587bf0);
+  background: -webkit-linear-gradient(-45deg, #49d6db, #2d96bc, #587bf0);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 button {
-  /* background: linear-gradient(-45deg, #09abb0, #2d96bc, #2f52c3); */
-  /* background-size: 400% 400%; */
-  /* animation: gradient 10s ease infinite; */
   color: #49d6db;
   border: 1px solid #49d6db;
   transition: transform 0.3s ease;
@@ -44,6 +36,14 @@ button {
 button:hover {
   transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0px 0px #49d6db, 10px 10px 10px -10px #49d6db;
+}
+
+.nav-link:hover {
+  color: #49d6db;
+}
+
+.highlighted {
+  color: #49d6db;
 }
 
 @keyframes gradient {
@@ -62,17 +62,9 @@ button:hover {
 
 .hover-effect {
   transition: transform 0.3s ease;
-  /* Add a transition for the transform property */
 }
 
 .hover-effect:hover {
   transform: scale(1.2);
   color: #49d6db;
-  /* Make the div 5% bigger on hover */
 }
-
-/* 
-@font-face {
-  font-family: 'Rosalia';
-  src: url('../src/fonts/Rosalia.otf') format('opentype'),
-} */

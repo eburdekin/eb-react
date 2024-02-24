@@ -3,10 +3,6 @@ import SectionH2 from "./SectionH2";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
-  const highlighted = {
-    color: "#49d6db",
-  };
-
   return (
     <section id="section-projects">
       <SectionH2>Projects</SectionH2>
@@ -26,7 +22,7 @@ export default function Projects() {
                 href="https://www.nytimes.com/2024/02/01/movies/nyc-movie-clubs.html"
                 target="_blank"
                 rel="noreferrer"
-                style={highlighted}
+                className="highlighted"
               >
                 New York Times!
               </a>{" "}
@@ -36,19 +32,20 @@ export default function Projects() {
             </p>
             <p>
               <b>Frontend:</b> Fully-responsive{" "}
-              <span style={highlighted}>React</span> app with nested layouts and
-              dark mode built using{" "}
-              <span style={highlighted}>Tailwind CSS</span>. Global user state
-              management is implemented with React's useContext hook. Modals
-              utilize <span style={highlighted}>Formik</span> for validating
-              user data entry.
+              <span className="highlighted">React</span> app with nested layouts
+              and dark mode built using{" "}
+              <span className="highlighted">Tailwind CSS</span>. Global user
+              state management is implemented with React's useContext hook.
+              Modals utilize <span className="highlighted">Formik</span> for
+              validating user data entry.
             </p>
             <p>
-              <b>Backend:</b> <span style={highlighted}>Flask-Restful </span>app
-              API built with <span style={highlighted}>SQLAlchemy</span>.{" "}
-              Password hashing and user authentication through{" "}
-              <span style={highlighted}>bcrypt</span>. Serialization and
-              validation via <span style={highlighted}>Marshmallow</span>.
+              <b>Backend:</b>{" "}
+              <span className="highlighted">Flask-Restful </span>app API built
+              with <span className="highlighted">SQLAlchemy</span>. Password
+              hashing and user authentication through{" "}
+              <span className="highlighted">bcrypt</span>. Serialization and
+              validation via <span className="highlighted">Marshmallow</span>.
             </p>
           </div>
         </ProjectCard>

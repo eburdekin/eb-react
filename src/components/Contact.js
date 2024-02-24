@@ -30,17 +30,23 @@ const Contact = () => {
     e.target.reset();
   };
 
+  const inputClass =
+    "peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-cyan-600";
+
+  const labelClass =
+    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500";
+
   return (
     <section id="section-contact">
       <SectionH2>Let's Connect!</SectionH2>
       <div className="mx-auto flex flex-col items-center">
         <p className="mt-3 text-gray-300 max-w-md">
           I am actively exploring new career opportunities and welcome your
-          inquiries. Let's see how we can work together!
+          inquiries. Let's see how we can work together.
         </p>
         <form
           onSubmit={handleSubmit}
-          className="mt-10 flex flex-col items-center"
+          className="mt-10 flex flex-col items-center max-w-md w-full"
         >
           <input
             type="hidden"
@@ -49,51 +55,39 @@ const Contact = () => {
           />
           <input type="hidden" name="access_key" value={ACCESS_KEY} />
 
-          <div className="grid gap-6 sm:grid-cols-1">
-            <div className="relative z-0">
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-cyan-600"
-                  placeholder=" "
-                />
-                <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500">
-                  Your name
-                </label>
-              </div>
+          <div className="flex flex-col space-y-6 w-full">
+            <div className="relative">
+              <input
+                type="text"
+                name="name"
+                className={inputClass}
+                placeholder=" "
+              />
+              <label className={labelClass}>Your name</label>
             </div>
 
-            <div className="relative z-0">
-              <div>
-                <input
-                  type="text"
-                  name="email"
-                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-cyan-600"
-                  placeholder=" "
-                />
-                <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500">
-                  Your email
-                </label>
-              </div>
+            <div className="relative">
+              <input
+                type="text"
+                name="email"
+                className={inputClass}
+                placeholder=" "
+              />
+              <label className={labelClass}>Your email</label>
             </div>
 
-            <div className="relative z-0 col-span-2">
-              <div>
-                <textarea
-                  name="message"
-                  rows="5"
-                  className="peer block w-full rounded border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-cyan-600"
-                  placeholder=" "
-                ></textarea>
-                <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-8 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500">
-                  Your message
-                </label>
-              </div>
+            <div className="relative">
+              <textarea
+                name="message"
+                rows="5"
+                className={inputClass}
+                placeholder=" "
+              ></textarea>
+              <label className={labelClass}>Your message</label>
             </div>
           </div>
 
-          <p className="text-sm mt-4" style={{ color: "#09abb0" }}>
+          <p className="highlighted text-sm mt-4">
             {message ? `${message}` : null}
           </p>
 
