@@ -12,7 +12,8 @@ export default function Footer() {
         <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">
           Eileen Burdekin
         </a>
-        . All rights reserved.
+        . Built with <span className="highlighted">React</span> and{" "}
+        <span className="highlighted">Tailwind CSS</span>.
       </p>
     </div>
   );
