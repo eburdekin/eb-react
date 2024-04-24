@@ -1,6 +1,3 @@
-// import SectionH3 from "./SectionH3";
-// import { Carousel } from "flowbite-react";
-
 const ProjectCard = (props) => {
   return (
     <div className="relative p-3 md:p-4 border mb-10 max-w-2xl bg-black rounded-2xl group">

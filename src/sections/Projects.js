@@ -1,8 +1,8 @@
-import SectionH2 from "./SectionH2";
+import SectionH2 from "../components/SectionH2";
 // import SectionH3 from "./SectionH3";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <section id="section-projects">
       <SectionH2>Projects</SectionH2>
@@ -52,4 +52,6 @@ export default function Projects() {
       </div>
     </section>
   );
-}
+};
+
+export default Projects;

@@ -1,6 +1,6 @@
-import ReviewCard from "./ReviewCard";
+import ReviewCard from "../components/ReviewCard";
 
-export default function Reviews() {
+const Reviews = () => {
   return (
     <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto mb-16">
       <ReviewCard
@@ -63,4 +63,6 @@ export default function Reviews() {
       </ReviewCard>
     </div>
   );
-}
+};
+
+export default Reviews;

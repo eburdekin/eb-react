@@ -5,9 +5,10 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 export default function Hero() {
   return (
     <div className="flex flex-col p-6 md:p-10 min-h-screen">
-      {/* <div className="flex flex-col p-6 md:p-10"> */}
       <div className="pt-32 md:pt-40 max-w-sm">
-        <h1 className="text-4xl md:text-5xl font-bold">Eileen Burdekin</h1>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+          Eileen Burdekin
+        </h1>
         <h2 className="text-2xl md:text-3xl font-bold text-white">
           Full-stack Developer
         </h2>

@@ -1,6 +1,7 @@
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import About from "../sections/About";
+import Projects from "../sections/Projects";
+import Skills from "../sections/Skills";
+import Contact from "../sections/Contact";
 import React, { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,6 +32,7 @@ export default function Page() {
   return (
     <div className="p-6 md:p-10">
       <Projects />
+      <Skills />
       <About />
       <Contact />
       {showBackToTop && (

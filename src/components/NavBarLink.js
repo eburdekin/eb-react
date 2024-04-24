@@ -1,8 +1,8 @@
 // import { NavLink } from "react-router-dom";
 
 const NavBarLink = ({ href, closeMenu, children }) => {
-  const pathname = window.location.pathname;
-  const active = pathname.startsWith(href);
+  // const pathname = window.location.pathname;
+  // const active = pathname.startsWith(href);
 
   return (
     <a
