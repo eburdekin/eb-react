@@ -45,7 +45,7 @@ const Skills = () => {
         <SectionH2>Skills</SectionH2>
         <SkillCards items={atfSkills} />
         <button
-          className="rounded font-bold p-2 my-2"
+          className="rounded font-bold p-2 my-6"
           onClick={() => {
             if (atfSkills.length === skills.length) {
               setAtfSkills(skills.slice(0, 12));

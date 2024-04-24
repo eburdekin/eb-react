@@ -14,7 +14,7 @@ const Reviews = () => {
           </>
         }
       >
-        <div className="text-sm m-5 flex flex-col justify-center gap-4">
+        <div className="text-sm m-4 flex flex-col justify-center gap-4">
           <p>
             "If you're reading this and considering hiring Eileen, I can only
             say that I hope I beat you to it! Eileen is the single most
@@ -43,7 +43,7 @@ const Reviews = () => {
           </>
         }
       >
-        <div className="text-sm m-5">
+        <div className="text-sm m-4">
           <p className="mb-4">
             "Everyone should know what a pleasure it is to work with and for
             Eileen.
