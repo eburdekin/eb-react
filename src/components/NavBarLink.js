@@ -8,7 +8,9 @@ const NavBarLink = ({ href, closeMenu, children }) => {
     <a
       href={href}
       onClick={closeMenu}
-      className={"nav-link p-2 mt-1 mb-1 rounded block font-bold"}
+      className={
+        "nav-link py-4 md:py-2 md:px-4 mt-1 mb-1 rounded block font-bold"
+      }
     >
       {children}
     </a>
