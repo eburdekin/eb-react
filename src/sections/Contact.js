@@ -3,8 +3,7 @@ import SectionH2 from "../components/SectionH2";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-// const ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
-const ACCESS_KEY = "46845829-dc1a-4911-914b-c17c6fa698f1";
+const ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
 
 const Contact = () => {
   const [message, setMessage] = useState(null);
