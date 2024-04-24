@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,10 +7,15 @@ body {
 }
 
 h1 {
+  font-family: "Inter";
   background: -webkit-linear-gradient(-45deg, #49d6db, #2d96bc, #587bf0);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h2, h3, h4, h5 {
+  font-family: "Inter"
 }
 
 button {
@@ -43,6 +34,10 @@ button:hover {
 }
 
 .highlighted {
+  color: #49d6db;
+}
+
+.skill-hover:hover {
   color: #49d6db;
 }
 
