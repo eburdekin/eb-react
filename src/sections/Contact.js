@@ -1,5 +1,4 @@
 import SectionH2 from "../components/SectionH2";
-// import SectionH3 from "../components/SectionH3";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -56,8 +55,7 @@ const Contact = () => {
         setMessage("An error occurred while submitting the form:", error);
       }
 
-      // Clear form data after successful submission
-      reset(); // Provided by useForm
+      reset();
     }
   };
 

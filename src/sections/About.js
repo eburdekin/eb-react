@@ -1,5 +1,4 @@
 import SectionH2 from "../components/SectionH2";
-// import SectionH3 from "../components/SectionH3";
 import Reviews from "./Reviews";
 
 const About = () => {

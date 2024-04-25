@@ -1,5 +1,4 @@
 import SectionH2 from "../components/SectionH2";
-// import SectionH3 from "./SectionH3";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {

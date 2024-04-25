@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Turn as Hamburger } from "hamburger-react";
-import NavBarLink from "./NavBarLink";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,9 +28,14 @@ export default function NavBar() {
             <div className="items-center"></div>
             <div className="hidden md:flex items-center space-x-2">
               {menuItems.map(({ url, label }, index) => (
-                <NavBarLink key={index} href={url} closeMenu={closeMenu}>
+                <a
+                  key={index}
+                  href={url}
+                  onClick={closeMenu}
+                  className="nav-link py-4 md:py-2 md:px-4 mt-1 mb-1 rounded block font-bold"
+                >
                   {label}
-                </NavBarLink>
+                </a>
               ))}
               <a href="../docs/Eileen_Burdekin_Resume.pdf">
                 <button className="rounded font-bold px-2 py-1 mx-3">
@@ -46,9 +50,14 @@ export default function NavBar() {
         <div className="md:hidden fixed bg-black text-white bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
           <div className="flex flex-col items-center mt-12 mb-4">
             {menuItems.map(({ url, label }, index) => (
-              <NavBarLink key={index} href={url} closeMenu={closeMenu}>
+              <a
+                key={index}
+                href={url}
+                onClick={closeMenu}
+                className="nav-link py-4 md:py-2 md:px-4 mt-1 mb-1 rounded block font-bold"
+              >
                 {label}
-              </NavBarLink>
+              </a>
             ))}
             <a href="../docs/Eileen_Burdekin_Resume.pdf">
               <button className="rounded font-bold px-2 py-1 my-3">
