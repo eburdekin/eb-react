@@ -5,10 +5,18 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactIcons() {
   const links = [
-    { to: "email", href: "mailto:eburdekin@proton.me", icon: faEnvelope },
-    { to: "github", href: "https://github.com/eburdekin", icon: faGithub },
     {
-      to: "linkedin",
+      label: "Contact me by email",
+      href: "mailto:eburdekin@proton.me",
+      icon: faEnvelope,
+    },
+    {
+      label: "View my GitHub profile",
+      href: "https://github.com/eburdekin",
+      icon: faGithub,
+    },
+    {
+      label: "View my LinkedIn profile",
       href: "https://www.linkedin.com/in/eburdekin/",
       icon: faLinkedin,
     },
@@ -18,9 +26,14 @@ export default function ContactIcons() {
     <div className="items-center">
       {links.map((link) => {
         return (
-          <a href={link.href} target="_blank" rel="noreferrer">
+          <a
+            href={link.href}
+            aria-label={link.label}
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
-              key={link.to}
+              key={link.label}
               icon={link.icon}
               size="2x"
               className="text-white m-2 hover-effect"
