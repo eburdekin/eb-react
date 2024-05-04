@@ -14,10 +14,6 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-h2, h3, h4, h5 {
-  font-family: "Inter"
-}
-
 button {
   color: #49d6db;
   border: 1px solid #49d6db;

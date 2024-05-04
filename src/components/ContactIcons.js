@@ -27,13 +27,13 @@ export default function ContactIcons() {
       {links.map((link) => {
         return (
           <a
+            key={link.label}
             href={link.href}
             aria-label={link.label}
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
-              key={link.label}
               icon={link.icon}
               size="2x"
               className="text-white m-2 hover-effect"

@@ -36,12 +36,12 @@ function Home() {
       <NavBar />
 
       <div className="flex flex-col md:flex-row">
-        <div className="w-full md:flex-1">
-          <div className="md:fixed md:top-0 h-full overflow-auto">
+        <div className="w-full md:flex-1 min-w-sm">
+          <div className="md:fixed md:top-0 h-full p-6 md:p-10">
             <Hero />
           </div>
         </div>
-        <div className="w-full md:w-2/3 mt-10">
+        <div className="w-full md:flex-1 mt-10 px-6">
           <Projects />
           <Skills />
           <About />

@@ -66,7 +66,7 @@ const Contact = () => {
                 className={inputClass}
                 placeholder=" "
               />
-              <label className={labelClass} for="name">
+              <label className={labelClass} htmlFor="name">
                 Your name
               </label>
               {errors.name && (
@@ -88,13 +88,12 @@ const Contact = () => {
                 className={inputClass}
                 placeholder=" "
               />
-              <label className={labelClass} for="email">
+              <label className={labelClass} htmlFor="email">
                 Your email
               </label>
               {errors.email && (
                 <p className="text-red-500 text-xs">{errors.email.message}</p>
               )}
-              {console.log(errors)}
             </div>
 
             <div className="relative">
@@ -105,7 +104,7 @@ const Contact = () => {
                 rows="5"
                 placeholder=" "
               ></textarea>
-              <label className={labelClass} for="message">
+              <label className={labelClass} htmlFor="message">
                 Your message
               </label>
               {errors.message && (
