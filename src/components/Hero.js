@@ -13,11 +13,11 @@ export default function Hero() {
           Full-stack Developer
         </h2>
         <p className="md:text-lg my-4 text-gray-200">
-          Software engineer with 8+ years of digital advertising experience in
-          agency, consultancy, and brand-side capacities.
+          Software engineer with 8+ years of digital advertising experience at
+          agencies and brands.
         </p>
       </div>
-      <div className="font-bold flex items-center text-lg md:text-xl gap-2 text-white">
+      <div className="flex items-center text-lg md:text-xl gap-2 text-white">
         <FontAwesomeIcon icon={faLocationDot} size="lg" color="#49d6db" />
         <p className="mt-1 md:mt-2">Los Angeles, CA</p>
       </div>

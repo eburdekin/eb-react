@@ -25,7 +25,7 @@ const Projects = () => {
               >
                 New York Times
               </a>
-              ! FilmClub is a social hub for film buffs to meet and discuss
+              . FilmClub is a social hub for film buffs to meet and discuss
               their favorite films. I wanted to build on the functionality of
               Letterboxd to allow for group discussions.
             </p>
@@ -39,12 +39,10 @@ const Projects = () => {
               validating user data entry.
             </p>
             <p>
-              <b>Backend:</b>{" "}
-              <span className="highlighted">Flask-Restful </span>app API built
-              with <span className="highlighted">SQLAlchemy</span>. Password
-              hashing and user authentication through{" "}
-              <span className="highlighted">bcrypt</span>. Serialization and
-              validation via <span className="highlighted">Marshmallow</span>.
+              <b>Backend:</b> <span className="highlighted">Flask-Restful</span>{" "}
+              API built with <span className="highlighted">SQLAlchemy</span>.
+              Password hashing and user authentication using{" "}
+              <span className="highlighted">bcrypt</span>.
             </p>
           </div>
         </ProjectCard>

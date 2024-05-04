@@ -15,55 +15,35 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    let isValid = true;
+    const formData = new FormData();
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("message", data.message);
+    formData.append("subject", "Contacted via eileenburdekin.com!");
+    formData.append("access_key", ACCESS_KEY);
 
-    if (!data.name) {
-      errors.name = "Name is required";
-      isValid = false;
-    }
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-      errors.email = "Invalid email";
-      isValid = false;
-    }
-
-    if (!data.message) {
-      errors.message = "Message is required";
-      isValid = false;
-    }
-
-    if (isValid) {
-      const formData = new FormData();
-      formData.append("name", data.name);
-      formData.append("email", data.email);
-      formData.append("message", data.message);
-      formData.append("subject", "Contacted via eileenburdekin.com!");
-      formData.append("access_key", ACCESS_KEY);
-
-      try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          body: formData,
-        });
-
-        if (response.ok) {
-          setMessage("Form submitted successfully!");
-        } else {
-          setMessage("Form submission failed");
-        }
-      } catch (error) {
-        setMessage("An error occurred while submitting the form:", error);
+      if (response.ok) {
+        setMessage("Form submitted successfully!");
+        reset();
+      } else {
+        setMessage("Form submission failed");
       }
-
-      reset();
+    } catch (error) {
+      setMessage("An error occurred while submitting the form:", error);
     }
   };
 
   const labelClass =
-    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform text-md text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500";
+    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform text-gray-300 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500";
 
   const inputClass =
-    "peer block w-full rounded border-gray-500 bg-transparent p-2.5 text-md text-white focus:border-cyan-600";
+    "peer block w-full rounded border-gray-500 bg-transparent p-2.5 text-white focus:border-cyan-600";
 
   return (
     <section id="section-contact">
@@ -77,22 +57,18 @@ const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="mt-10 flex flex-col items-center max-w-md w-full"
         >
-          <input
-            type="hidden"
-            name="subject"
-            value="Contacted via eileenburdekin.com!"
-          />
-          <input type="hidden" name="access_key" value={ACCESS_KEY} />
-
           <div className="flex flex-col space-y-6 w-full">
             <div className="relative">
               <input
+                id="name"
                 type="text"
                 {...register("name", { required: "Name is required" })}
                 className={inputClass}
                 placeholder=" "
               />
-              <label className={labelClass}>Your name</label>
+              <label className={labelClass} for="name">
+                Your name
+              </label>
               {errors.name && (
                 <p className="text-red-500 text-xs">{errors.name.message}</p>
               )}
@@ -100,28 +76,38 @@ const Contact = () => {
 
             <div className="relative">
               <input
+                id="email"
                 type="text"
                 {...register("email", {
                   required: "Email is required",
-                  pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Please enter a valid email address",
+                  },
                 })}
                 className={inputClass}
                 placeholder=" "
               />
-              <label className={labelClass}>Your email</label>
+              <label className={labelClass} for="email">
+                Your email
+              </label>
               {errors.email && (
                 <p className="text-red-500 text-xs">{errors.email.message}</p>
               )}
+              {console.log(errors)}
             </div>
 
             <div className="relative">
               <textarea
+                id="message"
+                className={inputClass}
                 {...register("message", { required: "Message is required" })}
                 rows="5"
-                className={inputClass}
                 placeholder=" "
               ></textarea>
-              <label className={labelClass}>Your message</label>
+              <label className={labelClass} for="message">
+                Your message
+              </label>
               {errors.message && (
                 <p className="text-red-500 text-xs">{errors.message.message}</p>
               )}

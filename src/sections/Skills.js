@@ -41,7 +41,7 @@ const Skills = () => {
 
   return (
     <section id="section-skills">
-      <div className="gap-1 justify-evenly max-w-6xl mx-auto mb-16 text-center">
+      <div className="gap-1 justify-evenly max-w-3xl mx-auto mb-16 text-center">
         <SectionH2>Skills</SectionH2>
         <SkillCards items={atfSkills} />
         <button

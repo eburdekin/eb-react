@@ -1,6 +1,6 @@
 const ProjectCard = (props) => {
   return (
-    <div className="relative p-3 md:p-4 border mb-10 max-w-xl bg-black rounded-2xl group">
+    <div className="relative p-3 md:p-4 border mb-10 max-w-lg bg-black rounded-2xl group">
       <div className="relative">
         <img
           src={props.image1}
