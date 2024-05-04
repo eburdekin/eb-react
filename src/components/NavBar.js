@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed bg-black text-white bg-opacity-95 z-50 top-0 right-0">
+      <nav className="fixed w-full bg-black text-white bg-opacity-95 z-50 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
             <div className="items-center"></div>
