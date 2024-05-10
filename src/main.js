@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -43,7 +42,7 @@ function Home() {
         </div>
         <div className="w-full md:flex-1 mt-10 px-6 justify-center">
           <Projects />
-          <Skills />
+        
           <About />
           <Contact />
           <div className="p-6 md:p-10">
