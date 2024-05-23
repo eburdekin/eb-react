@@ -7,8 +7,7 @@ const Projects = () => {
       <SectionH2>Projects</SectionH2>
       <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto mb-16">
         <ProjectCard
-          image1="../images/filmclub1.gif"
-          image2="../images/filmclubdb.png"
+          image="../images/filmclub1.gif"
           projectName="FilmClub"
           projectBlurb="Always screening near you."
           github="https://github.com/eburdekin/film-club-react"
@@ -16,27 +15,13 @@ const Projects = () => {
         >
           <div className="flex flex-col justify-center gap-4 mt-3">
             <p>
-              Film clubs are back - just ask the{" "}
-              <a
-                href="https://www.nytimes.com/2024/02/01/movies/nyc-movie-clubs.html"
-                target="_blank"
-                rel="noreferrer"
-                className="highlighted underline"
-              >
-                New York Times
-              </a>
-              . FilmClub is a social hub for film buffs to meet and discuss
-              their favorite films. I wanted to build on the functionality of
-              Letterboxd to allow for group discussions.
-            </p>
-            <p>
               <b>Frontend:</b> Fully-responsive{" "}
-              <span className="highlighted">React</span> app with nested layouts
-              and dark mode built using{" "}
-              <span className="highlighted">Tailwind CSS</span>. Global user
-              state management is implemented with React's useContext hook.
-              Modals utilize <span className="highlighted">Formik</span> for
-              validating user data entry.
+              <span className="highlighted">React</span> app with "theatre mode"
+              built using <span className="highlighted">Tailwind CSS</span>.
+              Global user state management is implemented with React's
+              useContext hook. Modals utilize{" "}
+              <span className="highlighted">Formik</span> for validating user
+              data entry.
             </p>
             <p>
               <b>Backend:</b> <span className="highlighted">Flask-Restful</span>{" "}

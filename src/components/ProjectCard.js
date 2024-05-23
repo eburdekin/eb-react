@@ -1,19 +1,32 @@
 const ProjectCard = (props) => {
   return (
-    <div className="relative p-3 md:p-4 border mb-10 max-w-lg bg-black rounded-2xl group">
+    <div className="relative p-3 md:p-4 border mb-10 max-w-sm bg-black rounded-2xl group">
       <div className="relative">
         <img
-          src={props.image1}
+          src={props.image}
           alt={props.projectName}
           className="rounded border border-gray-600 transition-opacity duration-300 ease-in-out group-hover:opacity-50"
         />
         <div className="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
           <div className="text-gray-300 flex items-center">
-            <a href={props.demo} target="_blank" rel="noreferrer">
-              <button className="rounded bg-black font-bold p-2 mx-2">
-                Demo
-              </button>
-            </a>
+            {props.demo ? (
+              <a href={props.demo} target="_blank" rel="noreferrer">
+                <button className="rounded bg-black font-bold p-2 mx-2">
+                  Demo
+                </button>{" "}
+              </a>
+            ) : (
+              ""
+            )}
+            {props.live ? (
+              <a href={props.live} target="_blank" rel="noreferrer">
+                <button className="rounded bg-black font-bold p-2 mx-2">
+                  Live
+                </button>{" "}
+              </a>
+            ) : (
+              ""
+            )}
             <a href={props.github} target="_blank" rel="noreferrer">
               <button className="rounded bg-black font-bold p-2 mx-2">
                 GitHub
