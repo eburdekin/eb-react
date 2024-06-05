@@ -15,7 +15,7 @@ export default function NavBar() {
   const menuItems = [
     { label: `Home`, url: `/#` },
     { label: `Projects`, url: `/#section-projects` },
-    // { label: `Skills`, url: `/#section-skills` },
+    { label: `Skills`, url: `/#section-skills` },
     { label: `Reviews`, url: `/#section-about` },
     { label: `Contact`, url: `/#section-contact` },
   ];
