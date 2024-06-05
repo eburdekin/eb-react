@@ -13,8 +13,8 @@ export default function Hero() {
           Full-stack Developer
         </h2>
         <p className="md:text-lg my-4 text-gray-200">
-          Software engineer with 8+ years of digital advertising experience at
-          agencies and brands.
+          Software engineer with 9+ years of digital advertising experience at
+          agencies, brands, and publishers.
         </p>
       </div>
       <div className="flex items-center text-lg md:text-xl gap-2 text-white">
