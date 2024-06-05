@@ -1,7 +1,7 @@
 const ProjectCard = (props) => {
   return (
-    <div className="relative p-3 md:p-4 border mb-10 max-w-sm bg-black rounded-2xl group">
-      <p className="text-xl md:text-2xl text-center mb-2 font-bold text-white">
+    <div className="relative p-3 md:p-4 border border-gray-600 mb-10 max-w-sm bg-black rounded-2xl group">
+      <p className="text-xl md:text-2xl text-center mb-4 font-bold text-white">
         {props.projectName}
       </p>
       <div className="relative">
@@ -33,7 +33,7 @@ const ProjectCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="text-gray-300 mt-4 flex flex-col justify-center gap-4 mt-3">
+      <div className="text-gray-300 my-4 flex flex-col justify-center">
         <p>{props.children}</p>
       </div>
     </div>

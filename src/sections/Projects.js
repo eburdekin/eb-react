@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section id="section-projects">
       <SectionH2>Projects</SectionH2>
-      <div className="flex flex-wrap gap-1 justify-evenly max-w-6xl mx-auto mb-16">
+      <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto mb-16">
         <ProjectCard
           image="../images/filmclub1.gif"
           projectName="FilmClub"
