@@ -65,6 +65,7 @@ const Contact = () => {
                 {...register("name", { required: "Name is required" })}
                 className={inputClass}
                 placeholder=" "
+                autocomplete="name"
               />
               <label className={labelClass} htmlFor="name">
                 Your name
@@ -87,6 +88,7 @@ const Contact = () => {
                 })}
                 className={inputClass}
                 placeholder=" "
+                autocomplete="email"
               />
               <label className={labelClass} htmlFor="email">
                 Your email
