@@ -9,27 +9,27 @@ const Projects = () => {
         <ProjectCard
           image="../images/filmclub1.gif"
           projectName="FilmClub"
-          projectBlurb="Always screening near you."
-          github="https://github.com/eburdekin/film-club-react"
-          demo="https://www.loom.com/share/13adaf09f1d946abae49477271323fbc?sid=e215cd12-2c46-49d4-9756-263dffcbe675"
+          link1="https://github.com/eburdekin/film-club-react"
+          linktext1="GitHub"
         >
-          <div className="flex flex-col justify-center gap-4 mt-3">
-            <p>
-              <b>Frontend:</b> Fully-responsive{" "}
-              <span className="highlighted">React</span> app with "theatre mode"
-              built using <span className="highlighted">Tailwind CSS</span>.
-              Global user state management is implemented with React's
-              useContext hook. Modals utilize{" "}
-              <span className="highlighted">Formik</span> for validating user
-              data entry.
-            </p>
-            <p>
-              <b>Backend:</b> <span className="highlighted">Flask-Restful</span>{" "}
-              API built with <span className="highlighted">SQLAlchemy</span>.
-              Password hashing and user authentication using{" "}
-              <span className="highlighted">bcrypt</span>.
-            </p>
-          </div>
+          Fully-responsive <span className="highlighted">React</span> frontend
+          with "theatre mode" built using Tailwind CSS. Global user state
+          managed with useContext hook. Backend built in{" "}
+          <span className="highlighted">Python</span> using Flask-SQLAlchemy and
+          bcrypt.
+        </ProjectCard>
+        <ProjectCard
+          image="../images/expungeassist.gif"
+          projectName="Expunge Assist"
+          link1="https://expungeassist.org/"
+          linktext1="Live"
+          link2="https://github.com/hackforla/expunge-assist"
+          linktext2="GitHub"
+        >
+          Free digital tool built with{" "}
+          <span className="highlighted">React</span> designed to aid
+          Californians with arrest and conviction histories in clearing their
+          criminal records.
         </ProjectCard>
       </div>
     </section>

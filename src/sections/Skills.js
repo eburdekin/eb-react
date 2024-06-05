@@ -10,11 +10,8 @@ import {
   SiSqlite,
   SiHtml5,
   SiCss3,
-  SiVite,
   SiNodedotjs,
   SiExpress,
-  SiMongodb,
-  SiMongoose,
 } from "react-icons/si";
 import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 import SkillCards from "../components/SkillCards";
@@ -31,9 +28,6 @@ const skills = [
   { text: "HTML", Icon: SiHtml5 },
   { text: "CSS", Icon: SiCss3 },
   { text: "Git", Icon: SiGit },
-  { text: "MongoDB", Icon: SiMongodb },
-  { text: "Vite.js", Icon: SiVite },
-  { text: "Mongoose", Icon: SiMongoose },
 ];
 
 const Skills = () => {
@@ -48,7 +42,7 @@ const Skills = () => {
           className="rounded font-bold p-2 my-6"
           onClick={() => {
             if (atfSkills.length === skills.length) {
-              setAtfSkills(skills.slice(0, 12));
+              setAtfSkills(skills.slice(0, 6));
             } else {
               setAtfSkills(skills);
             }

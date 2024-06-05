@@ -9,29 +9,24 @@ const ProjectCard = (props) => {
         />
         <div className="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
           <div className="text-gray-300 flex items-center">
-            {props.demo ? (
-              <a href={props.demo} target="_blank" rel="noreferrer">
+            {props.link1 ? (
+              <a href={props.link1} target="_blank" rel="noreferrer">
                 <button className="rounded bg-black font-bold p-2 mx-2">
-                  Demo
+                  {props.linktext1}
                 </button>{" "}
               </a>
             ) : (
               ""
             )}
-            {props.live ? (
-              <a href={props.live} target="_blank" rel="noreferrer">
+            {props.link2 ? (
+              <a href={props.link2} target="_blank" rel="noreferrer">
                 <button className="rounded bg-black font-bold p-2 mx-2">
-                  Live
+                  {props.linktext2}
                 </button>{" "}
               </a>
             ) : (
               ""
             )}
-            <a href={props.github} target="_blank" rel="noreferrer">
-              <button className="rounded bg-black font-bold p-2 mx-2">
-                GitHub
-              </button>{" "}
-            </a>
           </div>
         </div>
       </div>
@@ -39,8 +34,9 @@ const ProjectCard = (props) => {
         <p className="text-xl md:text-2xl font-bold text-white">
           {props.projectName}
         </p>
-        <b>{props.projectBlurb}</b>
-        {props.children}
+        <div className="flex flex-col justify-center gap-4 mt-3">
+          <p>{props.children}</p>
+        </div>
       </div>
     </div>
   );
