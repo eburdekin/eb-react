@@ -31,7 +31,7 @@ const skills = [
 ];
 
 const Skills = () => {
-  const [atfSkills, setAtfSkills] = useState(skills.slice(0, 12));
+  const [atfSkills, setAtfSkills] = useState(skills.slice(0, 6));
 
   return (
     <section id="section-skills">
