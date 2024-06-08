@@ -37,11 +37,11 @@ export default function NavBar() {
                   {label}
                 </a>
               ))}
-              // <a href="../docs/Eileen_Burdekin_Resume.pdf">
-              //  <button className="rounded font-bold px-2 py-1 mx-3">
-              //    Resume
-              //  </button>
-              // </a>
+              {/* <a href="../docs/Eileen_Burdekin_Resume.pdf">
+                <button className="rounded font-bold px-2 py-1 mx-3">
+                  Resume
+                </button>
+              </a> */}
             </div>
           </div>
         </div>
@@ -59,11 +59,11 @@ export default function NavBar() {
                 {label}
               </a>
             ))}
-            // <a href="../docs/Eileen_Burdekin_Resume.pdf">
-            //  <button className="rounded font-bold px-2 py-1 my-3">
-            //    Resume
-            //  </button>
-            // </a>
+            {/*  <a href="../docs/Eileen_Burdekin_Resume.pdf">
+              <button className="rounded font-bold px-2 py-1 my-3">
+                Resume
+              </button>
+             </a> */}
           </div>
         </div>
       )}
