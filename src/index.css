@@ -26,9 +26,7 @@ button:hover {
 }
 
 button:disabled {
-  color: #a9a9a9;
-  border: 1px solid #a9a9a9;
-  background-color: #f0f0f0;
+  background-color: #262525;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
