@@ -11,8 +11,8 @@ const Contact = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
-  } = useForm();
+    formState: { errors, isValid },
+  } = useForm({ mode: "onChange" });
 
   const onSubmit = async (data) => {
     const formData = new FormData();
@@ -119,7 +119,11 @@ const Contact = () => {
             {message ? `${message}` : null}
           </p>
 
-          <button type="submit" className="mt-2 rounded bg-black px-10 py-2">
+          <button
+            type="submit"
+            className="mt-2 rounded bg-black px-10 py-2"
+            disabled={!isValid}
+          >
             Send
           </button>
         </form>
