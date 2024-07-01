@@ -25,6 +25,15 @@ button:hover {
   box-shadow: 3px 3px 0px 0px #49d6db, 10px 10px 10px -10px #49d6db;
 }
 
+button:disabled {
+  color: #a9a9a9;
+  border: 1px solid #a9a9a9;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
 .nav-link:hover {
   color: #49d6db;
 }
