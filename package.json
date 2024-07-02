@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "flowbite-react": "^0.7.2",
     "hamburger-react": "^2.5.0",
+    "nth-check": "^2.0.1",
     "postcss": "^8.4.39",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
