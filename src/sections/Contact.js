@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 const ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
 
 const Contact = () => {
-  const [formSubmitMessage, setFormSubmitMessage] = useState(null);
+  const [message, setMessage] = useState(null);
 
   const {
     register,
@@ -29,21 +29,14 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setFormSubmitMessage("Form submitted successfully!");
+        setMessage("Form submitted successfully!");
         reset();
       } else {
-        setFormSubmitMessage("Form submission failed");
+        setMessage("Form submission failed");
       }
     } catch (error) {
-      setFormSubmitMessage(
-        "An error occurred while submitting the form:",
-        error
-      );
+      setMessage("An error occurred while submitting the form:", error);
     }
-  };
-
-  const ErrorMessage = ({ message }) => {
-    return <p className="text-red-500 text-xs">{message}</p>;
   };
 
   const labelClass =
@@ -78,10 +71,7 @@ const Contact = () => {
                 Your name
               </label>
               {errors.name && (
-                <ErrorMessage
-                  className="text-red-500 text-xs"
-                  message={errors.name.message}
-                />
+                <p className="text-red-500 text-xs">{errors.name.message}</p>
               )}
             </div>
 
@@ -104,10 +94,7 @@ const Contact = () => {
                 Your email
               </label>
               {errors.email && (
-                <ErrorMessage
-                  className="text-red-500 text-xs"
-                  message={errors.email.message}
-                />
+                <p className="text-red-500 text-xs">{errors.email.message}</p>
               )}
             </div>
 
@@ -123,20 +110,16 @@ const Contact = () => {
                 Your message
               </label>
               {errors.message && (
-                <ErrorMessage
-                  className="text-red-500 text-xs"
-                  message={errors.message.message}
-                />
+                <p className="text-red-500 text-xs">{errors.message.message}</p>
               )}
             </div>
           </div>
 
           <p className="highlighted text-sm mt-4">
-            {formSubmitMessage ? `${formSubmitMessage}` : null}
+            {message ? `${message}` : null}
           </p>
 
           <button
-            id="submit"
             type="submit"
             className="mt-2 rounded bg-black px-10 py-2"
             disabled={!isValid}
