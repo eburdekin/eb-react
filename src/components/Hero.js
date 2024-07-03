@@ -27,15 +27,15 @@ export default function Hero() {
             Download my resume
           </button>
         </a>
-        <br /> */}
+        <br />
         <a href="https://www.linkedin.com/in/eburdekin/">
           <button className="rounded font-bold p-2 my-2">
             Connect on LinkedIn
           </button>
-        </a>
+        </a> */}
       </div>
 
-      <div className="mt-4 flex items-center justify-center">
+      <div className="mt-10 flex items-center justify-center">
         <ContactIcons />
       </div>
     </div>
