@@ -21,19 +21,19 @@ export default function Hero() {
         <FontAwesomeIcon icon={faLocationDot} size="lg" color="#49d6db" />
         <p className="mt-1 md:mt-2">Los Angeles, CA</p>
       </div>
-      <div className="my-14">
-        {/* <a href="../docs/Eileen_Burdekin_Resume.pdf">
+      {/* <div className="my-14">
+        <a href="../docs/Eileen_Burdekin_Resume.pdf">
           <button className="rounded font-bold p-2 my-2">
             Download my resume
           </button>
         </a>
-        <br /> */}
+        <br />
         <a href="https://www.linkedin.com/in/eburdekin/">
           <button className="rounded font-bold p-2 my-2">
             Connect on LinkedIn
           </button>
         </a>
-      </div>
+      </div> */}
 
       <div className="mt-4 flex items-center justify-center">
         <ContactIcons />
