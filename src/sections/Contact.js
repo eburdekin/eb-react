@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 const ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
 
 const Contact = () => {
-  const [message, setMessage] = useState(null);
+  const [onSubmitMessage, setOnSubmitMessage] = useState(null);
 
   const {
     register,
@@ -29,13 +29,13 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setMessage("Form submitted successfully!");
+        setOnSubmitMessage("Form submitted successfully!");
         reset();
       } else {
-        setMessage("Form submission failed");
+        setOnSubmitMessage("Form submission failed");
       }
     } catch (error) {
-      setMessage("An error occurred while submitting the form:", error);
+      setOnSubmitMessage("An error occurred while submitting the form:", error);
     }
   };
 
@@ -44,6 +44,10 @@ const Contact = () => {
 
   const inputClass =
     "peer block w-full rounded border-gray-500 bg-transparent p-2.5 text-white focus:border-cyan-600";
+
+  const ErrorMessage = ({ message }) => {
+    return <p className="text-red-500 text-xs">{message}</p>;
+  };
 
   return (
     <section id="section-contact">
@@ -70,9 +74,7 @@ const Contact = () => {
               <label className={labelClass} htmlFor="name">
                 Your name
               </label>
-              {errors.name && (
-                <p className="text-red-500 text-xs">{errors.name.message}</p>
-              )}
+              {errors.name && <ErrorMessage message={errors.name.message} />}
             </div>
 
             <div className="relative">
@@ -93,9 +95,7 @@ const Contact = () => {
               <label className={labelClass} htmlFor="email">
                 Your email
               </label>
-              {errors.email && (
-                <p className="text-red-500 text-xs">{errors.email.message}</p>
-              )}
+              {errors.email && <ErrorMessage message={errors.email.message} />}
             </div>
 
             <div className="relative">
@@ -110,13 +110,13 @@ const Contact = () => {
                 Your message
               </label>
               {errors.message && (
-                <p className="text-red-500 text-xs">{errors.message.message}</p>
+                <ErrorMessage message={errors.message.message} />
               )}
             </div>
           </div>
 
           <p className="highlighted text-sm mt-4">
-            {message ? `${message}` : null}
+            {onSubmitMessage ? `${onSubmitMessage}` : null}
           </p>
 
           <button
