@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 const ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
 
 const Contact = () => {
-  const [message, setMessage] = useState(null);
+  const [formSubmitMessage, setFormSubmitMessage] = useState(null);
 
   const {
     register,
@@ -29,14 +29,21 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setMessage("Form submitted successfully!");
+        setFormSubmitMessage("Form submitted successfully!");
         reset();
       } else {
-        setMessage("Form submission failed");
+        setFormSubmitMessage("Form submission failed");
       }
     } catch (error) {
-      setMessage("An error occurred while submitting the form:", error);
+      setFormSubmitMessage(
+        "An error occurred while submitting the form:",
+        error
+      );
     }
+  };
+
+  const ErrorMessage = ({ message }) => {
+    return <p className="text-red-500 text-xs">{message}</p>;
   };
 
   const labelClass =
@@ -71,7 +78,10 @@ const Contact = () => {
                 Your name
               </label>
               {errors.name && (
-                <p className="text-red-500 text-xs">{errors.name.message}</p>
+                <ErrorMessage
+                  className="text-red-500 text-xs"
+                  message={errors.name.message}
+                />
               )}
             </div>
 
@@ -94,7 +104,10 @@ const Contact = () => {
                 Your email
               </label>
               {errors.email && (
-                <p className="text-red-500 text-xs">{errors.email.message}</p>
+                <ErrorMessage
+                  className="text-red-500 text-xs"
+                  message={errors.email.message}
+                />
               )}
             </div>
 
@@ -110,16 +123,20 @@ const Contact = () => {
                 Your message
               </label>
               {errors.message && (
-                <p className="text-red-500 text-xs">{errors.message.message}</p>
+                <ErrorMessage
+                  className="text-red-500 text-xs"
+                  message={errors.message.message}
+                />
               )}
             </div>
           </div>
 
           <p className="highlighted text-sm mt-4">
-            {message ? `${message}` : null}
+            {formSubmitMessage ? `${formSubmitMessage}` : null}
           </p>
 
           <button
+            id="submit"
             type="submit"
             className="mt-2 rounded bg-black px-10 py-2"
             disabled={!isValid}
