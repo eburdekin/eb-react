@@ -1,6 +1,6 @@
 const ProjectCard = (props) => {
   return (
-    <div className="relative p-3 md:p-4 border border-gray-600 mb-10 max-w-sm bg-black rounded-2xl group">
+    <div className="relative p-3 md:p-4 border border-gray-600 mb-10 max-w-xl bg-black rounded-2xl group">
       <p className="text-xl md:text-2xl text-center mb-4 font-bold text-white">
         {props.projectName}
       </p>

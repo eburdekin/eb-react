@@ -32,6 +32,13 @@ button:disabled {
   transform: none;
 }
 
+.giantQuotes {
+  font-size: 34pt;
+  color: #49d6db;
+  margin: 5px;
+  padding: 5px;
+}
+
 .nav-link:hover {
   color: #49d6db;
 }

@@ -7,18 +7,6 @@ const Projects = () => {
       <SectionH2>Projects</SectionH2>
       <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto mb-16">
         <ProjectCard
-          image="../images/filmclub1.gif"
-          projectName="FilmClub"
-          link1="https://github.com/eburdekin/film-club-react"
-          linktext1="GitHub"
-        >
-          Fully-responsive <span className="highlighted">React</span> frontend
-          with "theatre mode" built using Tailwind CSS. Global user state
-          managed with useContext hook. Backend built in{" "}
-          <span className="highlighted">Python</span> using Flask-SQLAlchemy and
-          bcrypt.
-        </ProjectCard>
-        <ProjectCard
           image="../images/expungeassist.gif"
           projectName="Expunge Assist"
           link1="https://expungeassist.org/"
