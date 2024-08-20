@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-regular-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^16.0.0",
@@ -14,11 +14,11 @@
     "flowbite-react": "^0.7.2",
     "hamburger-react": "^2.5.0",
     "nth-check": "^2.0.1",
-    "postcss": "^8.4.39",
+    "postcss": "^8.4.41",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.51.3",
-    "react-icons": "^5.1.0",
+    "react-hook-form": "^7.52.2",
+    "react-icons": "^5.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "ws": "^8.17.0"
@@ -50,6 +50,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.10"
   }
 }

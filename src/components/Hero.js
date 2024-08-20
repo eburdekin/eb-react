@@ -5,7 +5,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 export default function Hero() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="pt-32 md:pt-40 max-w-sm">
+      <div className="pt-40 max-w-sm">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Eileen Burdekin
         </h1>

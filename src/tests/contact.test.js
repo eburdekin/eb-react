@@ -18,7 +18,7 @@ describe("Contact form", () => {
     const emailInput = screen.getByLabelText(/your email/i);
     const messageInput = screen.getByLabelText(/your message/i);
 
-    userEvent.type(nameInput, "a");
+    userEvent.type(nameInput, "aa");
     userEvent.clear(nameInput);
     fireEvent.blur(nameInput);
 
