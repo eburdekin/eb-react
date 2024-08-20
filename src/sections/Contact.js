@@ -15,10 +15,12 @@ const Contact = () => {
   } = useForm({ mode: "onChange" });
 
   const onSubmit = async (data) => {
+    const { name, email, message } = data;
+
     const formData = new FormData();
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("message", data.message);
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
     formData.append("subject", "Contacted via eileenburdekin.com!");
     formData.append("access_key", ACCESS_KEY);
 
@@ -116,7 +118,7 @@ const Contact = () => {
           </div>
 
           <p className="highlighted text-sm mt-4">
-            {onSubmitMessage ? `${onSubmitMessage}` : null}
+            {onSubmitMessage && onSubmitMessage}
           </p>
 
           <button
