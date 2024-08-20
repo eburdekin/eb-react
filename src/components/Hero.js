@@ -9,13 +9,13 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Eileen Burdekin
         </h1>
-        <h2 className="text-2xl md:text-3xl font-bold text-white">
-          Full-stack Developer
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          Web Developer
         </h2>
-        <p className="md:text-lg my-4 text-gray-200">
-          Software engineer with 9+ years of digital advertising experience at
-          agencies, brands, and publishers.
-        </p>
+        {/* <p className="md:text-lg my-4 text-gray-200">
+          Di at agencies, brands, and
+          publishers
+        </p> */}
       </div>
       <div className="flex items-center text-lg md:text-xl gap-2 text-white">
         <FontAwesomeIcon icon={faLocationDot} size="lg" color="#49d6db" />
