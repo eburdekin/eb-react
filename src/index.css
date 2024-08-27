@@ -7,11 +7,12 @@ body {
 }
 
 h1 {
-  font-family: "Inter";
-  background: -webkit-linear-gradient(-45deg, #49d6db, #2d96bc, #587bf0);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "Outfit";
+  color: #03c6cd;
+}
+
+h2 {
+  font-family: "Outfit";
 }
 
 button {
@@ -32,13 +33,6 @@ button:disabled {
   transform: none;
 }
 
-.giantQuotes {
-  font-size: 34pt;
-  color: #49d6db;
-  margin: 5px;
-  padding: 5px;
-}
-
 .nav-link:hover {
   color: #49d6db;
 }
@@ -49,20 +43,6 @@ button:disabled {
 
 .skill-hover:hover {
   color: #49d6db;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .hover-effect {
