@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 const Projects = () => {
   return (
     <section id="section-projects">
-      <SectionH2>Projects</SectionH2>
+      <SectionH2>PROJECTS</SectionH2>
       <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto mb-16">
         <ProjectCard
           image="../images/expungeassist.gif"

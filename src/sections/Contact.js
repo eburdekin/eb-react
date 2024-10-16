@@ -53,9 +53,11 @@ const Contact = () => {
 
   return (
     <section id="section-contact">
-      <SectionH2>Let's Connect!</SectionH2>
+      <h2 className="text-xl text-gray-300 md:text-2xl mx-auto text-center py-2 my-5 md:my-8">
+        Let's Connect!
+      </h2>
       <div className="mx-auto flex flex-col items-center">
-        <p className="mt-3 text-gray-300 max-w-md">
+        <p className="mt-3 text-white max-w-md">
           I am actively exploring new career opportunities and welcome your
           inquiries. Let's see how we can work together.
         </p>

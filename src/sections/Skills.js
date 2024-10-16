@@ -4,10 +4,9 @@ import {
   SiGit,
   SiJavascript,
   SiReact,
-  SiTailwindcss,
   SiTypescript,
   SiPython,
-  SiSqlite,
+  SiPostgresql,
   SiHtml5,
   SiCss3,
   SiNodedotjs,
@@ -17,14 +16,13 @@ import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 import SkillCards from "../components/SkillCards";
 
 const skills = [
-  { text: "React", Icon: SiReact },
-  { text: "Typescript", Icon: SiTypescript },
   { text: "Javascript", Icon: SiJavascript },
+  { text: "Typescript", Icon: SiTypescript },
+  { text: "React", Icon: SiReact },
   { text: "Node.js", Icon: SiNodedotjs },
   { text: "Express.js", Icon: SiExpress },
   { text: "Python", Icon: SiPython },
-  { text: "SQLite", Icon: SiSqlite },
-  { text: "Tailwind", Icon: SiTailwindcss },
+  { text: "SQLite", Icon: SiPostgresql },
   { text: "HTML", Icon: SiHtml5 },
   { text: "CSS", Icon: SiCss3 },
   { text: "Git", Icon: SiGit },
@@ -35,8 +33,8 @@ const Skills = () => {
 
   return (
     <section id="section-skills">
+      <SectionH2>SKILLS</SectionH2>
       <div className="gap-1 justify-evenly max-w-3xl mx-auto mb-16 text-center">
-        <SectionH2>Skills</SectionH2>
         <SkillCards items={atfSkills} />
         <button
           className="rounded font-bold p-2 my-6"

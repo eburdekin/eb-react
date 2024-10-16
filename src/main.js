@@ -41,7 +41,7 @@ function Home() {
             <Hero />
           </div>
         </div>
-        <div className="w-full md:flex-1 mt-10 px-6 justify-center">
+        <div className="w-full max-w-6xl md:flex-1 mt-10 px-6 justify-center">
           <Projects />
           <Skills />
           <About />
