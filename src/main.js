@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/NavBar";
+import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <div className="min-h-screen gap-2 bg-black">
-      <Navbar />
+      <Menu />
 
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:flex-1 max-w-md">

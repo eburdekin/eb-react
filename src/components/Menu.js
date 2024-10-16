@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Turn as Hamburger } from "hamburger-react";
 
-export const NavbarItems = ({ items, onClick }) => (
+export const MenuItems = ({ items, onClick }) => (
   <>
     {items.map(({ url, label }, index) => (
       <a
@@ -16,37 +16,42 @@ export const NavbarItems = ({ items, onClick }) => (
   </>
 );
 
-export default function Navbar() {
+export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  function useClickOutside(ref, onClickOutside) {
+  function useClickOutside(menuRef, buttonRef, onClickOutside) {
     useEffect(() => {
-      // Invoke function onClick outside of element
       function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
+        // Check if the click is outside both the menu and the hamburger button
+        if (
+          menuRef.current &&
+          !menuRef.current.contains(event.target) &&
+          buttonRef.current &&
+          !buttonRef.current.contains(event.target)
+        ) {
           onClickOutside();
         }
       }
-      // Bind
+      // Bind the event listener
       document.addEventListener("mousedown", handleClickOutside);
       return () => {
-        // Dispose
+        // Cleanup
         document.removeEventListener("mousedown", handleClickOutside);
       };
-    }, [ref, onClickOutside]);
+    }, [menuRef, buttonRef, onClickOutside]);
   }
 
-  const menuRef = useRef(null);
+  const menuRef = useRef(null); // Ref for the menu
+  const buttonRef = useRef(null); // Ref for the hamburger button
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  useClickOutside(menuRef, () => {
-    setIsOpen(false);
-  });
+  // Handle outside clicks for the menu, excluding the hamburger button
+  useClickOutside(menuRef, buttonRef, () => setIsOpen(false));
 
-  const navbarItems = [
+  const menuItems = [
     { label: `Home`, url: `/#` },
     { label: `Projects`, url: `/#section-projects` },
     { label: `Skills`, url: `/#section-skills` },
@@ -59,12 +64,9 @@ export default function Navbar() {
       <nav className="fixed w-full bg-black text-white bg-opacity-95 z-50 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
-            <div className="items-center" ref={menuRef}></div>
+            <div className="items-center"></div>
             <div className="hidden md:flex items-center space-x-2">
-              <NavbarItems
-                items={navbarItems}
-                onClick={() => setIsOpen(false)}
-              />
+              <MenuItems items={menuItems} onClick={() => setIsOpen(false)} />
             </div>
           </div>
         </div>
@@ -72,11 +74,14 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden fixed bg-black text-white bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
           <div className="flex flex-col items-center mt-12 mb-4" ref={menuRef}>
-            <NavbarItems items={navbarItems} onClick={() => setIsOpen(false)} />
+            <MenuItems items={menuItems} onClick={() => setIsOpen(false)} />
           </div>
         </div>
       )}
-      <button className="md:hidden fixed top-4 right-4 z-50 rounded shadow-md bg-black">
+      <button
+        className="md:hidden fixed top-4 right-4 z-50 rounded shadow-md bg-black"
+        ref={buttonRef} // Add ref for the hamburger button
+      >
         <Hamburger toggled={isOpen} toggle={toggleMenu} color="#49d6db" />
       </button>
     </>
