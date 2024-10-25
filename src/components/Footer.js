@@ -7,7 +7,7 @@ export default function Footer() {
         <ContactIcons />
       </div>
 
-      <p className="text-sm text-white mb-1">
+      <p className="text-sm text-white">
         &copy; {new Date().getFullYear().toString()}{" "}
         <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">
           Eileen Burdekin
