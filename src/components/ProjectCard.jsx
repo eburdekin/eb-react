@@ -1,9 +1,7 @@
 const ProjectCard = (props) => {
   return (
     <div className="relative p-3 md:p-4 mb-10 max-w-xl bg-black group">
-      <p className="text-xl md:text-2xl mb-4 text-center text-white">
-        {props.projectName}
-      </p>
+      <p className="text-xl mb-4 text-center text-white">{props.projectName}</p>
       <div className="relative">
         <img
           src={props.image}
@@ -11,7 +9,7 @@ const ProjectCard = (props) => {
           className="rounded border border-gray-600 transition-opacity duration-300 ease-in-out group-hover:opacity-50"
         />
         <div className="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-          <div className="text-gray-300 flex items-center">
+          <div className="text-gray-200 flex items-center">
             {props.link1 ? (
               <a href={props.link1} target="_blank" rel="noreferrer">
                 <button className="rounded bg-black font-bold p-2 mx-2">
@@ -33,7 +31,7 @@ const ProjectCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="text-gray-300 my-4 flex flex-col justify-center">
+      <div className="text-gray-200 my-4 flex flex-col justify-center">
         <p>{props.children}</p>
       </div>
     </div>

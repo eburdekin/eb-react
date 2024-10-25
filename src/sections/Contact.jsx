@@ -1,8 +1,7 @@
-import SectionH2 from "../components/SectionH2";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-const ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
+const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 const Contact = () => {
   const [onSubmitMessage, setOnSubmitMessage] = useState(null);
@@ -42,7 +41,7 @@ const Contact = () => {
   };
 
   const labelClass =
-    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform text-gray-300 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500";
+    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform text-gray-200 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500";
 
   const inputClass =
     "peer block w-full rounded border-gray-500 bg-transparent p-2.5 text-white focus:border-cyan-600";
@@ -53,7 +52,7 @@ const Contact = () => {
 
   return (
     <section id="section-contact">
-      <h2 className="text-xl text-gray-300 md:text-2xl mx-auto text-center py-2 my-5 md:my-8">
+      <h2 className="text-xl text-gray-200 md:text-2xl mx-auto text-center py-2 my-5 md:my-8">
         Let's Connect!
       </h2>
       <div className="mx-auto flex flex-col items-center">

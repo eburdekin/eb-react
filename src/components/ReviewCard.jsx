@@ -5,8 +5,8 @@ const ReviewCard = (props) => {
         {props.children}
       </div>
       <div className="my-6">
-        <p className="font-bold text-gray-300">{`- ${props.personName}, ${props.jobRelation}`}</p>
-        <div className="text-sm text-gray-300">{props.jobPosition}</div>
+        <p className="font-bold text-gray-200">{`- ${props.personName}, ${props.jobRelation}`}</p>
+        <div className="text-sm text-gray-200">{props.jobPosition}</div>
       </div>
       <div className="text-center my-2">
         <a href={props.goTo} target="_blank" rel="noreferrer">
