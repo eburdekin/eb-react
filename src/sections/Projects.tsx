@@ -9,7 +9,7 @@ const Projects = () => {
       </h2>
       <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto">
         <ProjectCard
-          image="../images/expungeassist.png"
+          image="../images/expungeassist.webp"
           projectName="Expunge Assist"
           link1="https://expungeassist.org/"
           linktext1="Live"
