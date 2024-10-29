@@ -1,19 +1,26 @@
+import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-const Contact = () => {
-  const [onSubmitMessage, setOnSubmitMessage] = useState(null);
+interface IFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const Contact: React.FC = () => {
+  const [onSubmitMessage, setOnSubmitMessage] = useState<string | null>(null);
 
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors, isValid },
-  } = useForm({ mode: "onChange" });
+  } = useForm<IFormData>({ mode: "onChange" });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: IFormData) => {
     const { name, email, message } = data;
 
     const formData = new FormData();
@@ -36,7 +43,10 @@ const Contact = () => {
         setOnSubmitMessage("Form submission failed");
       }
     } catch (error) {
-      setOnSubmitMessage("An error occurred while submitting the form:", error);
+      setOnSubmitMessage(
+        "An error occurred while submitting the form:" +
+          (error instanceof Error ? error.message : "Unknown error")
+      );
     }
   };
 
@@ -46,13 +56,15 @@ const Contact = () => {
   const inputClass =
     "peer block w-full rounded border-gray-500 bg-transparent p-2.5 text-white focus:border-cyan-600";
 
-  const ErrorMessage = ({ message }) => {
+  const ErrorMessage: React.FC<{ message: string | undefined }> = ({
+    message,
+  }) => {
     return <p className="text-red-500 text-xs">{message}</p>;
   };
 
   return (
     <section id="section-contact">
-      <h2 className="text-xl text-gray-200 md:text-2xl mx-auto text-center py-2 my-5 md:my-8">
+      <h2 className="text-xl font-bold text-gray-200 mx-auto text-center py-2 mt-8">
         Let's Connect!
       </h2>
       <div className="mx-auto flex flex-col items-center">
@@ -106,7 +118,7 @@ const Contact = () => {
                 id="message"
                 className={inputClass}
                 {...register("message", { required: "Message is required" })}
-                rows="5"
+                rows={5}
                 placeholder=" "
               ></textarea>
               <label className={labelClass} htmlFor="message">

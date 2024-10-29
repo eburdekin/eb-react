@@ -1,6 +1,7 @@
+import React from "react";
 import ContactIcons from "./ContactIcons";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <div className="w-full text-center mt-10">
       <div className="md:hidden">
@@ -13,8 +14,10 @@ export default function Footer() {
           Eileen Burdekin
         </a>
         . Built with <span className="highlighted">React</span> and{" "}
-        <span className="highlighted">Tailwind CSS</span>.
+        <span className="highlighted">TypeScript</span>.
       </p>
     </div>
   );
-}
+};
+
+export default Footer;

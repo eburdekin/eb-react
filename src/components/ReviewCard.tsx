@@ -1,7 +1,17 @@
-const ReviewCard = (props) => {
+import React from "react";
+
+interface IReviewCardProps {
+  children: Iterable<React.ReactNode>;
+  personName: string;
+  jobRelation: string;
+  jobPosition: string;
+  goTo: string;
+}
+
+const ReviewCard = (props: IReviewCardProps) => {
   return (
-    <div className="mb-10 max-w-2xl text-gray-200">
-      <div className="card-body text-lg md:text-xl text-white flex flex-col justify-center gap-3">
+    <div className="mb-10 p-3 max-w-2xl border border-gray-500 text-gray-200">
+      <div className="card-body text-white flex flex-col justify-center gap-3">
         {props.children}
       </div>
       <div className="my-6">

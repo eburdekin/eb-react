@@ -1,3 +1,3 @@
-Personal portfolio site built with React and Tailwind CSS.
+Personal portfolio site built with React and TypeScript.
 
 View it here: <https://eileenburdekin.com>

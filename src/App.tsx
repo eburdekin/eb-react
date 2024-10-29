@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./components/Menu";
-import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import Reviews from "./sections/Reviews";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import BackToTop from "./components/BackToTop";
 import ContactIcons from "./components/ContactIcons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
@@ -54,21 +54,14 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-6xl md:flex-1 mt-10 px-6 justify-center">
+        <div className="w-full max-w-6xl md:flex-1 mt-10 px-6 flex flex-col gap-10 justify-center">
           <Projects />
           <Skills />
-          <About />
+          <Reviews />
           <Contact />
-          <div className="p-6 md:p-10">
-            {showBackToTop && (
-              <button
-                className="fixed bottom-5 py-1 right-4 px-3 rounded bg-black"
-                onClick={scrollToTop}
-              >
-                <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#49d6db" />
-              </button>
-            )}
-          </div>
+        </div>
+        <div className="p-6 md:p-10">
+          {showBackToTop && <BackToTop onClick={scrollToTop} />}
         </div>
       </div>
 
