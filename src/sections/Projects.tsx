@@ -1,13 +1,15 @@
-import SectionH2 from "../components/SectionH2";
+import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
   return (
     <section id="section-projects">
-      <SectionH2>PROJECTS</SectionH2>
-      <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto mb-16">
+      <h2 className="text-lg md:text-xl text-gray-200 font-bold text-center py-2 my-5 md:my-8">
+        PROJECTS
+      </h2>
+      <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto">
         <ProjectCard
-          image="../images/expungeassist.gif"
+          image="../images/expungeassist.png"
           projectName="Expunge Assist"
           link1="https://expungeassist.org/"
           linktext1="Live"
