@@ -67,7 +67,7 @@ const Skills = () => {
 
   return (
     <section id="section-skills">
-      <h2 className="text-lg md:text-xl font-bold text-center py-2 my-5 md:my-8">
+      <h2 className="text-xl font-bold text-center py-2 my-5 md:my-8">
         SKILLS
       </h2>
       <div className="gap-1 justify-evenly max-w-3xl mx-auto text-center">
