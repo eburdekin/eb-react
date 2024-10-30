@@ -32,10 +32,6 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  interface IBackToTopProps {
-    onClick: () => void;
-  }
-
   return (
     <div className="min-h-screen gap-2 bg-black">
       <Menu />

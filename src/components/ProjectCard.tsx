@@ -1,6 +1,6 @@
 import React from "react";
 
-interface IProjectCardProps {
+type ProjectCardProps = {
   children: Iterable<React.ReactNode>;
   projectName: string;
   image: string;
@@ -8,9 +8,9 @@ interface IProjectCardProps {
   linktext1: string;
   link2: string;
   linktext2: string;
-}
+};
 
-const ProjectCard = (props: IProjectCardProps) => {
+const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div className="relative p-3 md:p-4 max-w-md bg-black group">
       <p className="text-xl mb-4 text-center text-white">{props.projectName}</p>

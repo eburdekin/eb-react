@@ -1,14 +1,14 @@
 import React from "react";
 
-interface IReviewCardProps {
+type ReviewCardProps = {
   children: Iterable<React.ReactNode>;
   personName: string;
   jobRelation: string;
   jobPosition: string;
   goTo: string;
-}
+};
 
-const ReviewCard = (props: IReviewCardProps) => {
+const ReviewCard = (props: ReviewCardProps) => {
   return (
     <div className="mb-10 p-3 max-w-2xl border border-gray-500 text-gray-200">
       <div className="card-body text-white flex flex-col justify-center gap-3">

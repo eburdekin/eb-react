@@ -1,17 +1,18 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import { Turn as Hamburger } from "hamburger-react";
+import { types } from "util";
 
-interface MenuItem {
+type MenuItem = {
   label: string;
   url: string;
-}
+};
 
-interface IMenuItemsProps {
+type MenuItemsProps = {
   onClick: () => void;
-}
+};
 
-const MenuItems: React.FC<IMenuItemsProps> = ({ onClick }) => {
+const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
   const menuItems: MenuItem[] = [
     { label: `Home`, url: `/#` },
     { label: `Projects`, url: `/#section-projects` },

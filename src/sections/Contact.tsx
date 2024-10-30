@@ -4,11 +4,11 @@ import { useForm } from "react-hook-form";
 
 const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-interface IFormData {
+type FormData = {
   name: string;
   email: string;
   message: string;
-}
+};
 
 const Contact: React.FC = () => {
   const [onSubmitMessage, setOnSubmitMessage] = useState<string | null>(null);
@@ -18,9 +18,9 @@ const Contact: React.FC = () => {
     handleSubmit,
     reset,
     formState: { errors, isValid },
-  } = useForm<IFormData>({ mode: "onChange" });
+  } = useForm<FormData>({ mode: "onChange" });
 
-  const onSubmit = async (data: IFormData) => {
+  const onSubmit = async (data: FormData) => {
     const { name, email, message } = data;
 
     const formData = new FormData();
