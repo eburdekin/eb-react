@@ -6,7 +6,7 @@ import Reviews from "./sections/Reviews";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import BackToTop from "./components/BackToTop";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import ContactIcons from "./components/ContactIcons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
@@ -31,6 +31,10 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  interface IBackToTopProps {
+    onClick: () => void;
+  }
 
   return (
     <div className="min-h-screen gap-2 bg-black">
@@ -61,7 +65,14 @@ function App() {
           <Contact />
         </div>
         <div className="p-6 md:p-10">
-          {showBackToTop && <BackToTop onClick={scrollToTop} />}
+          {showBackToTop && (
+            <button
+              className="fixed bottom-5 py-1 right-4 px-3 rounded bg-black"
+              onClick={scrollToTop}
+            >
+              <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#49d6db" />
+            </button>
+          )}
         </div>
       </div>
 
