@@ -11,6 +11,10 @@ h1 {
   color: #03c6cd;
 }
 
+h2 {
+  color: #a4fcff;
+}
+
 button {
   color: #49d6db;
   border: 1px solid #49d6db;
@@ -29,8 +33,12 @@ button:disabled {
   transform: none;
 }
 
-.nav-link:hover {
+.nav-link {
   color: #49d6db;
+}
+
+.nav-link:hover {
+  color: #a4fcff;
 }
 
 .highlighted {

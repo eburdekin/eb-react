@@ -13,7 +13,7 @@ type ProjectCardProps = {
 const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div className="relative p-3 md:p-4 max-w-md bg-black group">
-      <p className="text-xl mb-4 text-center text-white">{props.projectName}</p>
+      <p className="text-lg mb-2 text-center text-white">{props.projectName}</p>
       <div className="relative">
         <img
           src={props.image}

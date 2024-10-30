@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import { Turn as Hamburger } from "hamburger-react";
-import { types } from "util";
 
 type MenuItem = {
   label: string;
@@ -14,7 +13,7 @@ type MenuItemsProps = {
 
 const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
   const menuItems: MenuItem[] = [
-    { label: `Home`, url: `/#` },
+    { label: `Home`, url: `/` },
     { label: `Projects`, url: `/#section-projects` },
     { label: `Skills`, url: `/#section-skills` },
     { label: `Reviews`, url: `/#section-reviews` },
@@ -29,7 +28,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
             key={index}
             href={url}
             onClick={onClick}
-            className="nav-link py-4 md:py-2 md:px-4 my-1 rounded block font-bold"
+            className="nav-link py-6 md:py-2 md:px-4 rounded block font-bold"
           >
             {label}
           </a>
@@ -93,7 +92,10 @@ const Menu = () => {
       </nav>
       {isOpen && (
         <div className="md:hidden fixed bg-black text-white bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
-          <div className="flex flex-col items-center mt-12 mb-4" ref={menuRef}>
+          <div
+            className="flex flex-col items-center mt-12 mb-4 text-2xl"
+            ref={menuRef}
+          >
             <MenuItems onClick={toggleMenu} />
           </div>
         </div>

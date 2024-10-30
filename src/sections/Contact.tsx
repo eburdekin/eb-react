@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
 
   return (
     <section id="section-contact">
-      <h2 className="text-xl font-bold text-gray-200 mx-auto text-center py-2 mt-8">
+      <h2 className="text-xl font-bold mx-auto text-center py-2 mt-8">
         Let's Connect!
       </h2>
       <div className="mx-auto flex flex-col items-center">

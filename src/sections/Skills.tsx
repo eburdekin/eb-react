@@ -67,7 +67,7 @@ const Skills = () => {
 
   return (
     <section id="section-skills">
-      <h2 className="text-lg md:text-xl text-gray-200 font-bold text-center py-2 my-5 md:my-8">
+      <h2 className="text-lg md:text-xl font-bold text-center py-2 my-5 md:my-8">
         SKILLS
       </h2>
       <div className="gap-1 justify-evenly max-w-3xl mx-auto text-center">
@@ -90,7 +90,7 @@ const Skills = () => {
 
   function ShowLess() {
     return (
-      <div className="flex gap-2">
+      <div className="flex gap-1 items-center">
         <span>Show Less</span>
         <FaAnglesUp />
       </div>
@@ -99,7 +99,7 @@ const Skills = () => {
 
   function ShowMore() {
     return (
-      <div className="flex gap-2">
+      <div className="flex gap-1 items-center">
         <span>Show More</span>
         <FaAnglesDown />
       </div>

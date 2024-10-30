@@ -54,7 +54,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-6xl md:flex-1 mt-10 px-6 flex flex-col gap-10 justify-center">
+        <div className="w-full max-w-6xl md:flex-1 mt-20 px-6 flex flex-col gap-10 justify-center">
           <Projects />
           <Skills />
           <Reviews />
