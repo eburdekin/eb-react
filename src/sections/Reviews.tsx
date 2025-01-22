@@ -5,7 +5,7 @@ const Reviews = () => {
   return (
     <section id="section-reviews">
       <h2 className="text-xl font-bold text-center py-2 my-5 md:my-8">
-        REVIEWS
+        Reviews
       </h2>
       <div className="flex flex-row flex-wrap gap-10 justify-evenly max-w-6xl mx-auto">
         <ReviewCard

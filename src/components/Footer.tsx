@@ -8,12 +8,12 @@ const Footer = () => {
         <ContactIcons />
       </div>
 
-      <p className="text-sm text-white">
+      <p className="text-sm">
         &copy; {new Date().getFullYear().toString()}{" "}
         <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">
           Eileen Burdekin
         </a>
-        . Built with <span className="highlighted">React</span> and{" "}
+        . Built with <span className="highlighted">React</span> in{" "}
         <span className="highlighted">TypeScript</span>.
       </p>
     </div>

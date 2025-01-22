@@ -33,21 +33,23 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen gap-2 bg-black">
+    <div className="min-h-screen gap-2">
       <Menu />
 
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:flex-1">
           <div className="flex flex-col min-h-screen p-6 sticky top-0">
             <div className="pt-40 my-auto max-w-md">
-              <h1 className="text-5xl font-semibold">Eileen Burdekin</h1>
-              <h2 className="text-3xl md:text-4xl text-white mb-4">
-                Web Developer
-              </h2>
+              <h1 className="text-5xl xl:text-6xl font-semibold">
+                Eileen Burdekin
+              </h1>
+              <h3 className="text-3xl md:text-4xl mb-4">Web Developer</h3>
             </div>
-            <div className="flex items-center text-lg md:text-xl gap-2 text-gray-200">
-              <FontAwesomeIcon icon={faLocationDot} size="lg" color="#49d6db" />
-              <p className="mt-1 md:mt-2 text-large">Los Angeles, CA</p>
+            <div className="flex items-center text-lg md:text-xl gap-2">
+              <FontAwesomeIcon icon={faLocationDot} size="lg" color="#97cfbb" />
+              <p className="mt-1 md:mt-2 text-large text-white">
+                Los Angeles, CA
+              </p>
             </div>
             <div className="my-40 flex items-center justify-center">
               <ContactIcons />
@@ -63,10 +65,10 @@ function App() {
         <div className="p-6 md:p-10">
           {showBackToTop && (
             <button
-              className="fixed bottom-5 py-1 right-4 px-3 rounded bg-black"
+              className="fixed bottom-5 py-1 right-4 px-3 rounded"
               onClick={scrollToTop}
             >
-              <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#49d6db" />
+              <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#97cfbb" />
             </button>
           )}
         </div>

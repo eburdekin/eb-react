@@ -2,51 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Acorn";
+  src: url('../public/fonts/acorn.woff') format('woff');
+}
+
+@font-face {
+  font-family: "GT Sans";
+  src: url('../public/fonts/gt.woff') format('woff');
+}
+
 body {
-  font-family: "Lato";
+  font-family: "GT Sans";
+  background-color: #233830;
+  color: #d2e9e1;
 }
 
-h1 {
-  font-family: "Outfit";
-  color: #03c6cd;
+h1, h2 {
+  font-family: "Acorn";
+  color: #97cfbb;
 }
 
-h2 {
-  color: #a4fcff;
+h3 {
+  color: #d2e9e1;
 }
 
 button {
-  color: #49d6db;
-  border: 1px solid #49d6db;
+  color: #97cfbb;
+  background-color: #233830;
+  border: 1px solid #97cfbb;
   transition: transform 0.2s ease;
 }
 
 button:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 3px 3px 0px 0px #49d6db, 10px 10px 10px -10px #49d6db;
+  box-shadow: 3px 3px 0px 0px #97cfbb, 10px 10px 10px -10px #97cfbb;
 }
 
 button:disabled {
-  background-color: #262525;
+  background-color: #233830;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
 }
 
 .nav-link {
-  color: #49d6db;
+  color: #d2e9e1;
 }
 
 .nav-link:hover {
-  color: #a4fcff;
+  color: #97cfbb;
 }
 
 .highlighted {
-  color: #49d6db;
+  color: #97cfbb;
 }
 
 .skill-hover:hover {
-  color: #49d6db;
+  color: #97cfbb;
 }
 
 .hover-effect {
@@ -55,5 +68,5 @@ button:disabled {
 
 .hover-effect:hover {
   transform: scale(1.2);
-  color: #49d6db;
+  color: #97cfbb;
 }

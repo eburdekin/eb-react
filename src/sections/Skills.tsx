@@ -47,7 +47,7 @@ const SkillCards: React.FC<ISkillCardsProps> = ({ items }) => {
             key={index}
             className="relative group block p-1 sm:p-2 h-full w-full"
           >
-            <div className="skill-hover text-white rounded-md w-full p-1 sm:p-2 overflow-hidden group-hover:ring-1 ring-gray-600 relative z-20 transition-all duration-500">
+            <div className="skill-hover rounded-md w-full p-1 sm:p-2 overflow-hidden group-hover:ring-1 ring-gray-600 relative z-20 transition-all duration-500">
               <div className="py-2 z-50 relative space-y-4">
                 <Icon className="w-6 sm:w-8 h-6 sm:h-8 mx-auto" />
                 <p className="text-sm md:text-md text-center text-gray-200">
@@ -68,7 +68,7 @@ const Skills = () => {
   return (
     <section id="section-skills">
       <h2 className="text-xl font-bold text-center py-2 my-5 md:my-8">
-        SKILLS
+        Skills
       </h2>
       <div className="gap-1 justify-evenly max-w-3xl mx-auto text-center">
         <SkillCards items={atfSkills} />
@@ -90,7 +90,7 @@ const Skills = () => {
 
   function ShowLess() {
     return (
-      <div className="flex gap-1 items-center">
+      <div className="flex gap-1 items-center text-white">
         <span>Show Less</span>
         <FaAnglesUp />
       </div>
@@ -99,7 +99,7 @@ const Skills = () => {
 
   function ShowMore() {
     return (
-      <div className="flex gap-1 items-center">
+      <div className="flex gap-1 items-center text-white">
         <span>Show More</span>
         <FaAnglesDown />
       </div>

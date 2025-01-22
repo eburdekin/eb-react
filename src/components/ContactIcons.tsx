@@ -37,7 +37,8 @@ const ContactIcons = () => {
             <FontAwesomeIcon
               icon={link.icon}
               size="2x"
-              className="text-white m-2 hover-effect"
+              color="#d2e9e1"
+              className="m-2 hover-effect"
             />
           </a>
         );

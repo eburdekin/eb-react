@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 const Projects = () => {
   return (
     <section id="section-projects">
-      <h2 className="text-xl font-bold text-center my-5">PROJECTS</h2>
+      <h2 className="text-xl font-bold text-center my-5">Projects</h2>
       <div className="flex flex-wrap gap-4 justify-evenly max-w-6xl mx-auto">
         <ProjectCard
           image="../images/expungeassist.webp"
