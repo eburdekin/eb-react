@@ -38,7 +38,7 @@ function App() {
 
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:flex-1">
-          <div className="flex flex-col min-h-screen p-4 sticky top-0">
+          <div className="flex flex-col min-h-screen p-4 md:p-6 sticky top-0">
             <div className="pt-40 my-auto max-w-md">
               <h1 className="text-5xl xl:text-6xl">Eileen Burdekin</h1>
               <h3 className="text-3xl md:text-4xl mb-4">Web Developer</h3>

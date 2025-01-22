@@ -8,7 +8,7 @@ const Footer = () => {
         <ContactIcons />
       </div>
 
-      <p>
+      <p className="text-sm">
         &copy; {new Date().getFullYear().toString()}{" "}
         <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">
           Eileen Burdekin

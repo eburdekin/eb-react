@@ -85,6 +85,15 @@ button:disabled {
 /* projects */
 
 
+/* reviews */
+
+.review-card {
+  border: 1px solid #416a5a;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 14px;
+}
+
 
 /* skills */
 

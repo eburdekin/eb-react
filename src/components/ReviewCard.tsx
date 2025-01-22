@@ -10,12 +10,10 @@ type ReviewCardProps = {
 
 const ReviewCard = (props: ReviewCardProps) => {
   return (
-    <div className="mb-10 p-3 max-w-2xl rounded border border-white">
-      <div className=" flex flex-col justify-center gap-3">
-        {props.children}
-      </div>
+    <div className="review-card max-w-2xl">
+      <div className="flex flex-col justify-center gap-3">{props.children}</div>
       <div className="my-6">
-        <p className="font-bold text-gray-200">{`- ${props.personName}, ${props.jobRelation}`}</p>
+        <p className="text-gray-200">{`- ${props.personName}, ${props.jobRelation}`}</p>
         <div className="text-sm text-gray-200">{props.jobPosition}</div>
       </div>
       <div className="text-center my-2">
