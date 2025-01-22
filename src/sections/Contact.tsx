@@ -54,12 +54,12 @@ const Contact: React.FC = () => {
     "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75";
 
   const inputClass =
-    "peer block w-full rounded border-gray-500 bg-transparent p-2.5 focus:border-cyan-600";
+    "peer block w-full rounded border-green-100 bg-transparent p-2.5 focus:border-green-200";
 
   const ErrorMessage: React.FC<{ message: string | undefined }> = ({
     message,
   }) => {
-    return <p className="text-red-400 text-xs">{message}</p>;
+    return <p className="form-error">{message}</p>;
   };
 
   return (

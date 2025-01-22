@@ -47,12 +47,10 @@ const SkillCards: React.FC<ISkillCardsProps> = ({ items }) => {
             key={index}
             className="relative group block p-1 sm:p-2 h-full w-full"
           >
-            <div className="skill-hover rounded-md w-full p-1 sm:p-2 overflow-hidden group-hover:ring-1 ring-gray-600 relative z-20 transition-all duration-500">
+            <div className="skill-hover rounded-md w-full p-1 overflow-hidden group-hover:ring-1 ring-gray-600 relative z-20 transition-all duration-500">
               <div className="py-2 z-50 relative space-y-4">
                 <Icon className="w-6 sm:w-8 h-6 sm:h-8 mx-auto" />
-                <p className="text-sm md:text-md text-center text-gray-200">
-                  {item.text}
-                </p>
+                <p className="text-sm text-center text-gray-200">{item.text}</p>
               </div>
             </div>
           </div>
@@ -71,7 +69,7 @@ const Skills = () => {
       <div className="gap-1 justify-evenly max-w-3xl mx-auto text-center">
         <SkillCards items={atfSkills} />
         <button
-          className="font-bold p-2 my-6"
+          className="p-2 my-6"
           onClick={() => {
             if (atfSkills.length === skills.length) {
               setAtfSkills(skills.slice(0, 6));
@@ -88,7 +86,7 @@ const Skills = () => {
 
   function ShowLess() {
     return (
-      <div className="flex gap-1 items-center text-white">
+      <div className="flex gap-1 items-center">
         <span>Show Less</span>
         <FaAnglesUp />
       </div>
@@ -97,7 +95,7 @@ const Skills = () => {
 
   function ShowMore() {
     return (
-      <div className="flex gap-1 items-center text-white">
+      <div className="flex gap-1 items-center">
         <span>Show More</span>
         <FaAnglesDown />
       </div>

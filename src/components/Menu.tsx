@@ -28,7 +28,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
             key={index}
             href={url}
             onClick={onClick}
-            className="nav-link py-6 md:py-2 md:px-4 rounded block font-bold"
+            className="nav-link py-6 md:py-2 md:px-4 block"
           >
             {label}
           </a>
@@ -80,10 +80,10 @@ const Menu = () => {
 
   return (
     <>
-      <nav className="nav fixed w-full bg-opacity-95 z-50 top-0 right-0">
+      <nav className="nav fixed w-full z-50 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
-            <div className="items-center"></div>
+            <div></div>
             <div className="hidden md:flex items-center space-x-2">
               <MenuItems onClick={toggleMenu} />
             </div>
@@ -91,7 +91,7 @@ const Menu = () => {
         </div>
       </nav>
       {isOpen && (
-        <div className="nav md:hidden fixed bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
+        <div className="nav md:hidden fixed inset-x-0 top-0 z-50 pb-6">
           <div
             className="flex flex-col items-center mt-12 mb-4 text-2xl"
             ref={menuRef}
