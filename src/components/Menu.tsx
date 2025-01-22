@@ -80,7 +80,7 @@ const Menu = () => {
 
   return (
     <>
-      <nav className="fixed w-full bg-opacity-95 z-50 top-0 right-0">
+      <nav className="nav fixed w-full bg-opacity-95 z-50 top-0 right-0">
         <div className="mx-auto px-4 relative z-50">
           <div className="flex justify-between items-center py-2">
             <div className="items-center"></div>
@@ -91,7 +91,7 @@ const Menu = () => {
         </div>
       </nav>
       {isOpen && (
-        <div className="md:hidden fixed bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
+        <div className="nav md:hidden fixed bg-opacity-95 inset-x-0 top-0 z-50 pb-6">
           <div
             className="flex flex-col items-center mt-12 mb-4 text-2xl"
             ref={menuRef}
@@ -101,7 +101,7 @@ const Menu = () => {
         </div>
       )}
       <button
-        className="md:hidden fixed top-4 right-4 z-50 rounded shadow-md"
+        className="md:hidden fixed top-4 right-4 z-50 shadow-md"
         ref={hamburgerButtonRef}
         aria-label="Toggle menu"
       >

@@ -51,24 +51,22 @@ const Contact: React.FC = () => {
   };
 
   const labelClass =
-    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform text-gray-200 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75 peer-focus:text-cyan-600 peer-focus:dark:text-cyan-500";
+    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75";
 
   const inputClass =
-    "peer block w-full rounded border-gray-500 bg-transparent p-2.5 text-white focus:border-cyan-600";
+    "peer block w-full rounded border-gray-500 bg-transparent p-2.5 focus:border-cyan-600";
 
   const ErrorMessage: React.FC<{ message: string | undefined }> = ({
     message,
   }) => {
-    return <p className="text-red-500 text-xs">{message}</p>;
+    return <p className="text-red-400 text-xs">{message}</p>;
   };
 
   return (
     <section id="section-contact">
-      <h2 className="text-xl font-bold mx-auto text-center py-2 mt-8">
-        Let's Connect!
-      </h2>
+      <h2 className="section-header mx-auto py-2 mt-8">Let's Connect!</h2>
       <div className="mx-auto flex flex-col items-center">
-        <p className="mt-3 text-white max-w-md">
+        <p className="mt-3 max-w-md">
           I am actively exploring new career opportunities and welcome your
           inquiries. Let's see how we can work together.
         </p>
@@ -134,11 +132,7 @@ const Contact: React.FC = () => {
             {onSubmitMessage && onSubmitMessage}
           </p>
 
-          <button
-            type="submit"
-            className="mt-2 rounded bg-black px-10 py-2"
-            disabled={!isValid}
-          >
+          <button type="submit" className="mt-2 px-10 py-2" disabled={!isValid}>
             Send
           </button>
         </form>

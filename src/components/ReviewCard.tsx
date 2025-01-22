@@ -20,9 +20,7 @@ const ReviewCard = (props: ReviewCardProps) => {
       </div>
       <div className="text-center my-2">
         <a href={props.goTo} target="_blank" rel="noreferrer">
-          <button className="rounded-md px-4 py-2 text-white">
-            Read it on LinkedIn
-          </button>
+          <button className="px-4 py-2 text-white">Read it on LinkedIn</button>
         </a>
       </div>
     </div>

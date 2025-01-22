@@ -67,13 +67,11 @@ const Skills = () => {
 
   return (
     <section id="section-skills">
-      <h2 className="text-xl font-bold text-center py-2 my-5 md:my-8">
-        Skills
-      </h2>
+      <h2 className="section-header py-2 my-5 md:my-8">Skills</h2>
       <div className="gap-1 justify-evenly max-w-3xl mx-auto text-center">
         <SkillCards items={atfSkills} />
         <button
-          className="rounded font-bold p-2 my-6"
+          className="font-bold p-2 my-6"
           onClick={() => {
             if (atfSkills.length === skills.length) {
               setAtfSkills(skills.slice(0, 6));

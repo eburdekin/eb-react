@@ -23,12 +23,12 @@ const ProjectCard = (props: ProjectCardProps) => {
         <div className="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
           <div className="text-gray-200 flex gap-5 items-center">
             <a href={props.link1} target="_blank" rel="noreferrer">
-              <button className="rounded font-bold p-2 mx-2 w-[100px]">
+              <button className="font-bold p-2 mx-2 w-[100px]">
                 {props.linktext1}
               </button>
             </a>
             <a href={props.link2} target="_blank" rel="noreferrer">
-              <button className="rounded font-bold p-2 mx-2 w-[100px]">
+              <button className="font-bold p-2 mx-2 w-[100px]">
                 {props.linktext2}
               </button>
             </a>

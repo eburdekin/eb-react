@@ -40,9 +40,7 @@ function App() {
         <div className="w-full md:flex-1">
           <div className="flex flex-col min-h-screen p-6 sticky top-0">
             <div className="pt-40 my-auto max-w-md">
-              <h1 className="text-5xl xl:text-6xl font-semibold">
-                Eileen Burdekin
-              </h1>
+              <h1 className="text-5xl xl:text-6xl">Eileen Burdekin</h1>
               <h3 className="text-3xl md:text-4xl mb-4">Web Developer</h3>
             </div>
             <div className="flex items-center text-lg md:text-xl gap-2">

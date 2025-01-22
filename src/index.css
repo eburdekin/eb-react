@@ -12,6 +12,8 @@
   src: url('../public/fonts/gt.woff') format('woff');
 }
 
+/* global styles */
+
 body {
   font-family: "GT Sans";
   background-color: #233830;
@@ -32,6 +34,7 @@ button {
   background-color: #233830;
   border: 1px solid #97cfbb;
   transition: transform 0.2s ease;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -46,19 +49,7 @@ button:disabled {
   transform: none;
 }
 
-.nav-link {
-  color: #d2e9e1;
-}
-
-.nav-link:hover {
-  color: #97cfbb;
-}
-
 .highlighted {
-  color: #97cfbb;
-}
-
-.skill-hover:hover {
   color: #97cfbb;
 }
 
@@ -68,5 +59,30 @@ button:disabled {
 
 .hover-effect:hover {
   transform: scale(1.2);
+  color: #97cfbb;
+}
+
+.section-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* nav menu */
+
+.nav {
+  background-color: #233830;
+}
+
+.nav-link {
+  color: #d2e9e1;
+}
+
+.nav-link:hover {
+  color: #97cfbb;
+}
+
+/* skills */
+
+.skill-hover:hover {
   color: #97cfbb;
 }
