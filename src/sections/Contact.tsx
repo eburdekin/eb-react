@@ -51,10 +51,9 @@ const Contact: React.FC = () => {
   };
 
   const labelClass =
-    "absolute left-2 top-3 z-10 origin-[0] -translate-y-8 scale-75 transform duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75";
+    "absolute left-2 top-2 z-10 origin-[0] -translate-y-8 scale-75 transform duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75";
 
-  const inputClass =
-    "peer block w-full rounded border-green-100 bg-transparent p-2.5 focus:border-green-200";
+  const inputClass = "contact-input peer";
 
   const ErrorMessage: React.FC<{ message: string | undefined }> = ({
     message,
@@ -64,16 +63,13 @@ const Contact: React.FC = () => {
 
   return (
     <section id="section-contact">
-      <h2 className="section-header mx-auto py-2 mt-8">Let's Connect!</h2>
+      <h2 className="section-header">Let's Connect!</h2>
       <div className="mx-auto flex flex-col items-center">
         <p className="mt-3 max-w-md">
           I am actively exploring new career opportunities and welcome your
           inquiries. Let's see how we can work together.
         </p>
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="mt-10 flex flex-col items-center max-w-md w-full"
-        >
+        <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
           <div className="flex flex-col space-y-6 w-full">
             <div className="relative">
               <input
@@ -128,7 +124,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <p className="highlighted text-sm mt-4">
+          <p className="highlighted small-text mt-4">
             {onSubmitMessage && onSubmitMessage}
           </p>
 

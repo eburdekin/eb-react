@@ -38,7 +38,7 @@ const ContactIcons = () => {
               icon={link.icon}
               size="2x"
               color="#d2e9e1"
-              className="m-2 hover-effect"
+              className="contact-icon hover-effect"
             />
           </a>
         );

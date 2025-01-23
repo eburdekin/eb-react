@@ -4,8 +4,8 @@ import ReviewCard from "../components/ReviewCard";
 const Reviews = () => {
   return (
     <section id="section-reviews">
-      <h2 className="section-header py-2 my-5 md:my-8">Reviews</h2>
-      <div className="flex flex-row flex-wrap gap-10 justify-evenly max-w-6xl mx-auto">
+      <h2 className="section-header">Reviews</h2>
+      <div className="review-card-container">
         <ReviewCard
           goTo="https://www.linkedin.com/in/eburdekin/"
           personName="Kelly Reilly"

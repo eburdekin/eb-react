@@ -14,7 +14,7 @@ const ReviewCard = (props: ReviewCardProps) => {
       <div className="flex flex-col justify-center gap-3">{props.children}</div>
       <div className="my-6">
         <p className="text-gray-200">{`- ${props.personName}, ${props.jobRelation}`}</p>
-        <div className="text-sm text-gray-200">{props.jobPosition}</div>
+        <div className="small-text text-gray-200">{props.jobPosition}</div>
       </div>
       <div className="text-center my-2">
         <a href={props.goTo} target="_blank" rel="noreferrer">

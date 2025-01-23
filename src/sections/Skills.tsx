@@ -38,7 +38,7 @@ interface ISkillCardsProps {
 
 const SkillCards: React.FC<ISkillCardsProps> = ({ items }) => {
   return (
-    <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 xl:grid-cols-6">
+    <div className="skill-card-grid">
       {items.map((item: Skill, index: number) => {
         const Icon = item.Icon;
 
@@ -50,7 +50,9 @@ const SkillCards: React.FC<ISkillCardsProps> = ({ items }) => {
             <div className="skill-hover rounded-md w-full p-1 overflow-hidden group-hover:ring-1 ring-gray-600 relative z-20 transition-all duration-500">
               <div className="py-2 z-50 relative space-y-4">
                 <Icon className="w-6 sm:w-8 h-6 sm:h-8 mx-auto" />
-                <p className="text-sm text-center text-gray-200">{item.text}</p>
+                <p className="small-text text-center text-gray-200">
+                  {item.text}
+                </p>
               </div>
             </div>
           </div>
@@ -65,8 +67,8 @@ const Skills = () => {
 
   return (
     <section id="section-skills">
-      <h2 className="section-header py-2 my-5 md:my-8">Skills</h2>
-      <div className="gap-1 justify-evenly max-w-3xl mx-auto text-center">
+      <h2 className="section-header">Skills</h2>
+      <div className="skill-card-container">
         <SkillCards items={atfSkills} />
         <button
           className="p-2 my-6"
@@ -86,7 +88,7 @@ const Skills = () => {
 
   function ShowLess() {
     return (
-      <div className="flex gap-1 items-center">
+      <div className="skill-show-button">
         <span>Show Less</span>
         <FaAnglesUp />
       </div>
@@ -95,7 +97,7 @@ const Skills = () => {
 
   function ShowMore() {
     return (
-      <div className="flex gap-1 items-center">
+      <div className="skill-show-button">
         <span>Show More</span>
         <FaAnglesDown />
       </div>
