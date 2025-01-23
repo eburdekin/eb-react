@@ -175,6 +175,7 @@ section {
 .project-name {
   font-size: 22px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .tech-chip {
