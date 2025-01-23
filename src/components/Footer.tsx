@@ -4,16 +4,13 @@ import ContactIcons from "./ContactIcons";
 const Footer = () => {
   return (
     <footer>
-      <div className="md:hidden">
+      <div className="footer-contact-icon-container">
         <ContactIcons />
       </div>
 
       <p className="small-text">
-        &copy; {new Date().getFullYear().toString()}{" "}
-        <a href="https://github.com/eburdekin" target="_blank" rel="noreferrer">
-          Eileen Burdekin
-        </a>
-        . Built with React.
+        &copy; {new Date().getFullYear().toString()} Eileen Burdekin . Built
+        with React.
       </p>
     </footer>
   );

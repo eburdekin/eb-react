@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Menu from "./components/Menu";
+import Menu from "./components/Nav";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Work";
 import Skills from "./sections/Skills";
@@ -32,30 +32,24 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen gap-2">
-      <Menu />
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:flex-1">
+    <div>
+      <div className="page-container">
+        <Menu />
+        <div className="hero-container">
           <Hero />
         </div>
-        <div className="w-full max-w-6xl md:flex-1 mt-20 px-6 flex flex-col gap-10 justify-center">
+        <div className="sections-container">
           <Projects />
           <Skills />
           <Reviews />
           <Contact />
         </div>
-        <div className="p-6 md:p-10">
-          {showBackToTop && (
-            <button
-              className="fixed bottom-5 py-1 right-4 px-3"
-              onClick={scrollToTop}
-            >
-              <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#97cfbb" />
-            </button>
-          )}
-        </div>
+        {showBackToTop && (
+          <button className="scroll-to-top-button" onClick={scrollToTop}>
+            <FontAwesomeIcon icon={faArrowUp} size="2xl" color="#97cfbb" />
+          </button>
+        )}
       </div>
-
       <Footer />
     </div>
   );

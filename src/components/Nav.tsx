@@ -13,7 +13,7 @@ type MenuItemsProps = {
 
 const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
   const menuItems: MenuItem[] = [
-    { label: `Home`, url: `/` },
+    { label: `Home`, url: `/#` },
     { label: `Projects`, url: `/#section-projects` },
     { label: `Skills`, url: `/#section-skills` },
     { label: `Reviews`, url: `/#section-reviews` },
@@ -24,12 +24,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
     <>
       {menuItems.map(
         ({ url, label }: { url: string; label: string }, index: number) => (
-          <a
-            key={index}
-            href={url}
-            onClick={onClick}
-            className="nav-link py-6 md:py-2 md:px-4 block"
-          >
+          <a key={index} href={url} onClick={onClick} className="nav-link">
             {label}
           </a>
         )
@@ -38,7 +33,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
   );
 };
 
-const Menu = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function useClickOutside(
@@ -80,28 +75,18 @@ const Menu = () => {
 
   return (
     <>
-      <nav className="nav fixed w-full z-50 top-0 right-0">
-        <div className="mx-auto px-4 relative z-50">
-          <div className="flex justify-between items-center py-2">
-            <div></div>
-            <div className="hidden md:flex items-center space-x-2">
-              <MenuItems onClick={toggleMenu} />
-            </div>
-          </div>
+      <nav className="nav-desktop-container">
+        <div className="nav-desktop">
+          <MenuItems onClick={toggleMenu} />
         </div>
       </nav>
       {isOpen && (
-        <div className="nav md:hidden fixed inset-x-0 top-0 z-50 pb-6">
-          <div
-            className="flex flex-col items-center mt-12 mb-4 text-2xl"
-            ref={menuRef}
-          >
-            <MenuItems onClick={toggleMenu} />
-          </div>
-        </div>
+        <nav className="nav-mobile" ref={menuRef}>
+          <MenuItems onClick={toggleMenu} />
+        </nav>
       )}
       <button
-        className="md:hidden fixed top-4 right-4 z-50 shadow-md"
+        className="hamburger"
         ref={hamburgerButtonRef}
         aria-label="Toggle menu"
       >
@@ -111,4 +96,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Nav;

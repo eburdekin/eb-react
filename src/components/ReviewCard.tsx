@@ -10,15 +10,15 @@ type ReviewCardProps = {
 
 const ReviewCard = (props: ReviewCardProps) => {
   return (
-    <div className="review-card max-w-2xl">
-      <div className="flex flex-col justify-center gap-3">{props.children}</div>
-      <div className="my-6">
-        <p className="text-gray-200">{`- ${props.personName}, ${props.jobRelation}`}</p>
-        <div className="small-text text-gray-200">{props.jobPosition}</div>
+    <div className="review-card">
+      <div className="review">{props.children}</div>
+      <div className="review-attribution">
+        <p>{`- ${props.personName}, ${props.jobRelation}`}</p>
+        <div className="small-text">{props.jobPosition}</div>
       </div>
-      <div className="text-center my-2">
+      <div className="linkedin-button-container">
         <a href={props.goTo} target="_blank" rel="noreferrer">
-          <button className="px-4 py-2">Read it on LinkedIn</button>
+          <button>Read it on LinkedIn</button>
         </a>
       </div>
     </div>

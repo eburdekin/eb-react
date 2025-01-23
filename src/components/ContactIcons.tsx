@@ -24,7 +24,7 @@ const ContactIcons = () => {
   ];
 
   return (
-    <div className="items-center">
+    <div>
       {links.map((link) => {
         return (
           <a

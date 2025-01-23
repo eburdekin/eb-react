@@ -50,11 +50,6 @@ const Contact: React.FC = () => {
     }
   };
 
-  const labelClass =
-    "absolute left-2 top-2 z-10 origin-[0] -translate-y-8 scale-75 transform duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-75";
-
-  const inputClass = "contact-input peer";
-
   const ErrorMessage: React.FC<{ message: string | undefined }> = ({
     message,
   }) => {
@@ -64,29 +59,29 @@ const Contact: React.FC = () => {
   return (
     <section id="section-contact">
       <h2 className="section-header">Let's Connect!</h2>
-      <div className="mx-auto flex flex-col items-center">
-        <p className="mt-3 max-w-md">
+      <div className="contact-form-container">
+        <p className="contact-blurb">
           I am actively exploring new career opportunities and welcome your
           inquiries. Let's see how we can work together.
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
-          <div className="flex flex-col space-y-6 w-full">
-            <div className="relative">
+          <div className="contact-inputs-container">
+            <div className="contact-input-container">
               <input
                 id="name"
                 type="text"
                 {...register("name", { required: "Name is required" })}
-                className={inputClass}
+                className="contact-input peer"
                 placeholder=" "
                 autoComplete="name"
               />
-              <label className={labelClass} htmlFor="name">
+              <label className="contact-input-label" htmlFor="name">
                 Your name
               </label>
               {errors.name && <ErrorMessage message={errors.name.message} />}
             </div>
 
-            <div className="relative">
+            <div className="contact-input-container">
               <input
                 id="email"
                 type="text"
@@ -97,25 +92,25 @@ const Contact: React.FC = () => {
                     message: "Please enter a valid email address",
                   },
                 })}
-                className={inputClass}
+                className="contact-input peer"
                 placeholder=" "
                 autoComplete="email"
               />
-              <label className={labelClass} htmlFor="email">
+              <label className="contact-input-label" htmlFor="email">
                 Your email
               </label>
               {errors.email && <ErrorMessage message={errors.email.message} />}
             </div>
 
-            <div className="relative">
+            <div className="contact-input-container">
               <textarea
                 id="message"
-                className={inputClass}
+                className="contact-input peer"
                 {...register("message", { required: "Message is required" })}
                 rows={5}
                 placeholder=" "
               ></textarea>
-              <label className={labelClass} htmlFor="message">
+              <label className="contact-input-label" htmlFor="message">
                 Your message
               </label>
               {errors.message && (
@@ -124,11 +119,11 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <p className="highlighted small-text mt-4">
+          <p className="small-text submit-message">
             {onSubmitMessage && onSubmitMessage}
           </p>
 
-          <button type="submit" className="mt-2 px-10 py-2" disabled={!isValid}>
+          <button type="submit" className="send-button" disabled={!isValid}>
             Send
           </button>
         </form>

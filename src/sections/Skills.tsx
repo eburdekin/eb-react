@@ -43,18 +43,9 @@ const SkillCards: React.FC<ISkillCardsProps> = ({ items }) => {
         const Icon = item.Icon;
 
         return (
-          <div
-            key={index}
-            className="relative group block p-1 sm:p-2 h-full w-full"
-          >
-            <div className="skill-hover rounded-md w-full p-1 overflow-hidden group-hover:ring-1 ring-gray-600 relative z-20 transition-all duration-500">
-              <div className="py-2 z-50 relative space-y-4">
-                <Icon className="w-6 sm:w-8 h-6 sm:h-8 mx-auto" />
-                <p className="small-text text-center text-gray-200">
-                  {item.text}
-                </p>
-              </div>
-            </div>
+          <div key={index} className="skill-card">
+            <Icon className="skill-icon" />
+            <p className="skill-text small-text">{item.text}</p>
           </div>
         );
       })}
@@ -71,7 +62,7 @@ const Skills = () => {
       <div className="skill-card-container">
         <SkillCards items={atfSkills} />
         <button
-          className="p-2 my-6"
+          className="skill-show-button"
           onClick={() => {
             if (atfSkills.length === skills.length) {
               setAtfSkills(skills.slice(0, 6));
@@ -88,7 +79,7 @@ const Skills = () => {
 
   function ShowLess() {
     return (
-      <div className="skill-show-button">
+      <div className="skill-show-button-content">
         <span>Show Less</span>
         <FaAnglesUp />
       </div>
@@ -97,7 +88,7 @@ const Skills = () => {
 
   function ShowMore() {
     return (
-      <div className="skill-show-button">
+      <div className="skill-show-button-content">
         <span>Show More</span>
         <FaAnglesDown />
       </div>
