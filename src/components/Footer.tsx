@@ -9,8 +9,8 @@ const Footer = () => {
       </div>
 
       <p className="small-text">
-        &copy; {new Date().getFullYear().toString()} Eileen Burdekin . Built
-        with React.
+        &copy; {new Date().getFullYear().toString()} Eileen Burdekin. Built with
+        React.
       </p>
     </footer>
   );
