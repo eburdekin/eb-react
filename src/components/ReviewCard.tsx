@@ -13,7 +13,7 @@ const ReviewCard = (props: ReviewCardProps) => {
     <div className="review-card">
       <div className="review">{props.children}</div>
       <div className="review-attribution">
-        <p>{`- ${props.personName}, ${props.jobRelation}`}</p>
+        <span>{`- ${props.personName}, ${props.jobRelation}`}</span>
         <div className="small-text">{props.jobPosition}</div>
       </div>
       <div className="linkedin-button-container">

@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="section-contact">
+    <section id="contact">
       <h2 className="section-header">Let's Connect!</h2>
       <div className="contact-form-container">
         <p className="contact-blurb">

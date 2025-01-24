@@ -14,10 +14,10 @@ type MenuItemsProps = {
 const MenuItems: React.FC<MenuItemsProps> = ({ onClick }) => {
   const menuItems: MenuItem[] = [
     { label: `Home`, url: `/#` },
-    { label: `Projects`, url: `/#section-projects` },
-    { label: `Skills`, url: `/#section-skills` },
-    { label: `Reviews`, url: `/#section-reviews` },
-    { label: `Contact`, url: `/#section-contact` },
+    { label: `Work`, url: `/#work` },
+    { label: `Skills`, url: `/#skills` },
+    { label: `Reviews`, url: `/#reviews` },
+    { label: `Contact`, url: `/#contact` },
   ];
 
   return (

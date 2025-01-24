@@ -1,15 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "Acorn";
-  src: url('../public/fonts/acorn.woff') format('woff');
+  src: url('../fonts/acorn.woff') format('woff');
 }
 
 @font-face {
   font-family: "GT Sans";
-  src: url('../public/fonts/gt.woff') format('woff');
+  src: url('../fonts/gt.woff') format('woff');
 }
 
 /* global styles */
@@ -27,23 +23,12 @@ body {
   background-color: #233830;
   color: #d2e9e1;
   font-size: 18px;
-  padding: 0px 24px 0px 24px;
-}
-
-h3 {
-  color: #d2e9e1;
-  font-size: 30px;
-  line-height: 36px;
-  margin-bottom: 16px;
-
-  @media (min-width: 768px) {
-    font-size: 36px;
-    line-height: 40px;
-  }
+  line-height: 24px;
 }
 
 button {
   color: white;
+  font-family: "GT Sans";
   font-size: 16px;
   background-color: #233830;
   border: 1px solid #97cfbb;
@@ -80,6 +65,7 @@ button:disabled {
 .page-container {
   display: flex;
   flex-direction: column;
+  padding: 0px 24px 0px 24px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -187,10 +173,6 @@ nav {
   top: 0px;
   min-height: 100vh;
   position: sticky;
-
-  @media (min-width: 768px) {
-    padding: 36px;
-  }
 }
 
 .hero-headers {
@@ -208,10 +190,23 @@ h1, h2 {
 h1 {
   font-size: 48px;
   line-height: 1;
+  margin: 0px;
 
   @media (min-width: 1280px) {
     font-size: 60px;
     line-height: 1;
+  }
+}
+
+h3 {
+  color: #d2e9e1;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -328,7 +323,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 
 .skill-card-grid {
@@ -352,6 +346,7 @@ h1 {
   border-radius: 6px;
   padding: 8px;
   margin: 10px;
+  text-align: center;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -385,8 +380,7 @@ h1 {
 }
 
 .skill-show-button {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 18px;
   display: flex;
   gap: 4px;
   align-items: center;
@@ -403,10 +397,8 @@ h1 {
 .review-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 40px;
   max-width: 1152px;
 }
 
@@ -424,8 +416,6 @@ h1 {
 .review {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 12px;
 }
 
 .review-attribution {
@@ -450,7 +440,6 @@ h1 {
 }
 
 .contact-form {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -475,7 +464,7 @@ h1 {
   top: 8px;
   z-index: 10;
   color: #97cfbb;
-  padding: 0 4px;
+  /* padding: 0 4px; */
   transition: all 0.3s ease;
   pointer-events: none;
   transform-origin: left top;
@@ -505,7 +494,6 @@ h1 {
 }
 
 .send-button {
-  margin-top: 16px;
   padding: 8px 40px 8px 40px;
 }
 
@@ -521,7 +509,7 @@ h1 {
 footer {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 100px;
   margin-bottom: 2px;
 }
 

@@ -57,7 +57,7 @@ const Skills = () => {
   const [atfSkills, setAtfSkills] = useState(skills.slice(0, 6));
 
   return (
-    <section id="section-skills">
+    <section id="skills">
       <h2 className="section-header">Skills</h2>
       <div className="skill-card-container">
         <SkillCards items={atfSkills} />

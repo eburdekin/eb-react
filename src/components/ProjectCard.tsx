@@ -12,7 +12,7 @@ type ProjectCardProps = {
 const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div className="project-card">
-      <p className="project-name">{props.projectName}</p>
+      <span className="project-name">{props.projectName}</span>
       <div className="project-image-container">
         <img
           src={props.image}

@@ -3,7 +3,7 @@ import ReviewCard from "../components/ReviewCard";
 
 const Reviews = () => {
   return (
-    <section id="section-reviews">
+    <section id="reviews">
       <h2 className="section-header">Reviews</h2>
       <div className="review-card-container">
         <ReviewCard

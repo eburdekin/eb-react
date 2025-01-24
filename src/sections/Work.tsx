@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Work = () => {
   return (
-    <section id="section-projects">
+    <section id="work">
       <h2 className="section-header">Work</h2>
       <div className="project-card-container">
         <ProjectCard
