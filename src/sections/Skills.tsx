@@ -5,7 +5,7 @@ import {
   SiReact,
   SiTypescript,
   SiPython,
-  SiPostgresql,
+  SiMysql,
   SiHtml5,
   SiCss3,
   SiNodedotjs,
@@ -26,7 +26,7 @@ const skills: Skill[] = [
   { text: "Node.js", Icon: SiNodedotjs },
   { text: "Express.js", Icon: SiExpress },
   { text: "Python", Icon: SiPython },
-  { text: "PostgreSQL", Icon: SiPostgresql },
+  { text: "MySQL", Icon: SiMysql },
   { text: "HTML", Icon: SiHtml5 },
   { text: "CSS", Icon: SiCss3 },
   { text: "Git", Icon: SiGit },
@@ -45,7 +45,7 @@ const SkillCards: React.FC<ISkillCardsProps> = ({ items }) => {
         return (
           <div key={index} className="skill-card">
             <Icon className="skill-icon" />
-            <p className="skill-text small-text">{item.text}</p>
+            <span className="skill-text small-text">{item.text}</span>
           </div>
         );
       })}

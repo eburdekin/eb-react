@@ -23,7 +23,7 @@ body {
   background-color: #233830;
   color: #d2e9e1;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 button {
@@ -34,7 +34,7 @@ button {
   border: 1px solid #97cfbb;
   transition: transform 0.2s ease;
   border-radius: 5px;
-  padding: 8px;
+  padding: 10px;
 }
 
 button:hover {
@@ -65,10 +65,11 @@ button:disabled {
 .page-container {
   display: flex;
   flex-direction: column;
-  padding: 0px 24px 0px 24px;
+  padding: 0px 18px 0px 18px;
 
   @media (min-width: 768px) {
     flex-direction: row;
+    padding: 0px 24px 0px 24px;
   }
 }
 
@@ -89,7 +90,7 @@ button:disabled {
 .section-header {
   font-size: 30px;
   text-align: center;
-  margin: 10px 0px 10px 0px;
+  margin: 24px 0px 24px 0px;
 }
 
 /* nav menu */
@@ -145,11 +146,10 @@ nav {
 
 .nav-link {
   color: #d2e9e1;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 32px 0px 32px 0px;
 
   @media (min-width: 768px) {
-    padding: 20px 8px 20px 8px;
+    padding: 8px 20px 8px 20px;
   }
 }
 
@@ -290,7 +290,7 @@ h3 {
   position: absolute;
   inset: 0px;
   display: flex;
-  gap: 20px;
+  gap: 36px;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -301,20 +301,19 @@ h3 {
 
 .project-image-overlay-button {
   width: 100px;
-  margin-left: 8px;
-  margin-right: 8px;
 }
 
 .tech-chip-container {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .tech-chip {
   background-color: #2e483f;
   font-size: 14px;
-  padding: 6px 10px 6px 10px;
-  border-radius: 20px;
+  padding: 6px 8px 6px 8px;
+  border-radius: 25px;
 }
 
 /* skills */
@@ -344,8 +343,7 @@ h3 {
   height: 100%;
   width: 100%;
   border-radius: 6px;
-  padding: 8px;
-  margin: 10px;
+  padding: 4px;
   text-align: center;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -376,7 +374,7 @@ h3 {
 .skill-text {
   text-align: center;
   color: white;
-  margin-top: 15px;
+  display: block;
 }
 
 .skill-show-button {
@@ -398,24 +396,28 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 40px;
+  gap: 36px;
   max-width: 1152px;
 }
 
 .review-card {
   background-color: #2e483f;
   border-radius: 15px;
-  margin-bottom: 8px;
   padding: 25px;
   max-width: 672px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 24px;
 }
 
 .review {
   display: flex;
   flex-direction: column;
+  gap: 18px;
+}
+
+.review p {
+  margin: 0px;
 }
 
 .review-attribution {
@@ -432,10 +434,10 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 14px;
 }
 
 .contact-blurb {
-  margin-top: 12px;
   max-width: 448px;
 }
 
@@ -461,10 +463,9 @@ h3 {
 .contact-input-label {
   position: absolute;
   left: 8px;
-  top: 8px;
+  top: 6px;
   z-index: 10;
   color: #97cfbb;
-  /* padding: 0 4px; */
   transition: all 0.3s ease;
   pointer-events: none;
   transform-origin: left top;
@@ -481,7 +482,7 @@ h3 {
   display: block;
   width: 100%;
   border-radius: 5px;
-  padding: 8px;
+  padding: 10px;
 }
 
 .contact-input:focus {
@@ -494,7 +495,7 @@ h3 {
 }
 
 .send-button {
-  padding: 8px 40px 8px 40px;
+  padding: 10px 40px 10px 40px;
 }
 
 /* footer */

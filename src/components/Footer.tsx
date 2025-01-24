@@ -8,10 +8,10 @@ const Footer = () => {
         <ContactIcons />
       </div>
 
-      <p className="small-text">
+      <span className="small-text">
         &copy; {new Date().getFullYear().toString()} Eileen Burdekin. Built with
         React.
-      </p>
+      </span>
     </footer>
   );
 };
