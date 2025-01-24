@@ -488,16 +488,26 @@ h3 {
   color: #97cfbb;
 }
 
+.contact-input:-webkit-autofill+.contact-input-label,
+.contact-input:focus+.contact-input-label {
+  transform: translateY(-26px) translateX(-4px) scale(0.7);
+  color: #97cfbb;
+}
+
+.contact-input:-webkit-autofill {
+  -webkit-text-fill-color: #233830 !important;
+  background-color: transparent !important;
+}
+
 .contact-input {
   border: 1px solid #548574;
   color: #97cfbb;
   font-family: "GT Sans";
   font-size: 18px;
   background: transparent;
-  display: block;
   width: 100%;
   border-radius: 5px;
-  padding: 12px;
+  padding: 10px;
   outline: none;
   transition: border-color 0.3s ease;
 }
