@@ -89,6 +89,7 @@ button:disabled {
 
 .section-header {
   font-size: 30px;
+  font-weight: normal;
   text-align: center;
   margin: 24px 0px 24px 0px;
 }
@@ -185,6 +186,7 @@ nav {
 h1, h2 {
   font-family: "Acorn";
   color: #97cfbb;
+  font-weight: normal;
 }
 
 h1 {
@@ -203,6 +205,7 @@ h3 {
   font-size: 30px;
   line-height: 36px;
   margin: 0px;
+  font-weight: normal;
 
   @media (min-width: 768px) {
     font-size: 36px;
