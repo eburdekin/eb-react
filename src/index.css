@@ -328,12 +328,13 @@ h3 {
 .skill-card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .skill-card-grid {
   display: grid;
   gap: 12px;
+  margin: 12px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
   @media (min-width: 1024px) {
@@ -385,10 +386,11 @@ h3 {
 }
 
 .skill-show-button {
-  margin: 18px;
+  margin: 18px auto;
   display: flex;
   gap: 4px;
   align-items: center;
+  width: fit-content;
 }
 
 .skill-show-button-content {
