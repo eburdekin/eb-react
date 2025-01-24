@@ -28,7 +28,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           </a>
         </div>
       </div>
-      <div>{props.children}</div>
+      <div className="project-blurb">{props.children}</div>
       <div className="tech-chip-container">
         {props.technologies.map((tech) => {
           return (
