@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
   const ErrorMessage: React.FC<{ message: string | undefined }> = ({
     message,
   }) => {
-    return <p className="form-error">{message}</p>;
+    return <span className="form-error">{message}</span>;
   };
 
   return (
