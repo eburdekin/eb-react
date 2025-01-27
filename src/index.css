@@ -8,6 +8,16 @@
   src: url('../fonts/gt.woff') format('woff');
 }
 
+/* variables */
+
+:root {
+  --main-bg-color: #233830;
+  --primary-text-color: #d2e9e1;
+  --secondary-text-color: #97cfbb;
+  --tertiary-text-color: #619a86;
+  --input-border-color: #548574;
+}
+
 /* global styles */
 
 * {
@@ -20,8 +30,8 @@ a {
 
 body {
   font-family: "GT Sans";
-  background-color: #233830;
-  color: #d2e9e1;
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
   font-size: 18px;
   line-height: 26px;
 }
@@ -30,8 +40,8 @@ button {
   color: white;
   font-family: "GT Sans";
   font-size: 16px;
-  background-color: #233830;
-  border: 1px solid #97cfbb;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--secondary-text-color);
   transition: transform 0.2s ease;
   border-radius: 5px;
   padding: 10px;
@@ -39,11 +49,10 @@ button {
 
 button:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 3px 3px 0px 0px #97cfbb, 10px 10px 10px -10px #97cfbb;
+  box-shadow: 3px 3px 0px 0px var(--secondary-text-color), 10px 10px 10px -10px var(--secondary-text-color);
 }
 
 button:disabled {
-  background-color: #233830;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -55,7 +64,7 @@ button:disabled {
 
 .hover-effect:hover {
   transform: scale(1.2);
-  color: #97cfbb;
+  color: var(--secondary-text-color);
 }
 
 .small-text {
@@ -91,13 +100,13 @@ button:disabled {
   font-size: 30px;
   font-weight: normal;
   text-align: center;
-  margin: 22px 0px 22px 0px;
+  margin: 22px 0px;
 }
 
 /* nav menu */
 
 nav {
-  background-color: #233830;
+  background-color: var(--main-bg-color);
   position: fixed;
   z-index: 50;
   top: 0px;
@@ -146,7 +155,7 @@ nav {
 }
 
 .nav-link {
-  color: #d2e9e1;
+  color: var(--primary-text-color);
   padding: 32px 0px;
 
   @media (min-width: 768px) {
@@ -155,7 +164,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #97cfbb;
+  color: var(--secondary-text-color);
 }
 
 /* hero */
@@ -185,7 +194,7 @@ nav {
 
 h1, h2 {
   font-family: "Acorn";
-  color: #97cfbb;
+  color: var(--secondary-text-color);
   font-weight: normal;
 }
 
@@ -201,7 +210,7 @@ h1 {
 }
 
 h3 {
-  color: #d2e9e1;
+  color: var(--primary-text-color);
   font-size: 30px;
   line-height: 36px;
   margin: 0px;
@@ -364,7 +373,7 @@ h3 {
 }
 
 .skill-card:hover {
-  color: #97cfbb;
+  color: var(--secondary-text-color);
 }
 
 .skill-icon {
@@ -476,7 +485,7 @@ h3 {
   left: 8px;
   top: 6px;
   z-index: 10;
-  color: #619a86;
+  color: var(--tertiary-text-color);
   transition: all 0.3s ease;
   pointer-events: none;
   transform-origin: left top;
@@ -485,23 +494,23 @@ h3 {
 .contact-input:focus+.contact-input-label,
 .contact-input:not(:placeholder-shown)+.contact-input-label {
   transform: translateY(-26px) translateX(-4px) scale(0.7);
-  color: #97cfbb;
+  color: var(--secondary-text-color);
 }
 
 .contact-input:-webkit-autofill+.contact-input-label,
 .contact-input:focus+.contact-input-label {
   transform: translateY(-26px) translateX(-4px) scale(0.7);
-  color: #97cfbb;
+  color: var(--secondary-text-color);
 }
 
 .contact-input:-webkit-autofill {
-  -webkit-text-fill-color: #233830 !important;
+  -webkit-text-fill-color: var(--main-bg-color) !important;
   background-color: transparent !important;
 }
 
 .contact-input {
-  border: 1px solid #548574;
-  color: #97cfbb;
+  border: 1px solid var(--input-border-color);
+  color: var(--secondary-text-color);
   font-family: "GT Sans";
   font-size: 18px;
   background: transparent;
@@ -513,7 +522,7 @@ h3 {
 }
 
 .contact-input:focus {
-  border-color: #97cfbb;
+  border-color: var(--secondary-text-color);
 }
 
 .form-error {
@@ -523,7 +532,7 @@ h3 {
 }
 
 .send-button {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
 }
 
 /* footer */
@@ -532,7 +541,7 @@ h3 {
   position: fixed;
   bottom: 20px;
   right: 16px;
-  padding: 6px 12px 6px 12px;
+  padding: 6px 12px;
 }
 
 footer {
