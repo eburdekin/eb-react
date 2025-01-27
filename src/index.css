@@ -571,7 +571,7 @@ footer {
   opacity: 0;
   z-index: 999;
   position: absolute;
-  transform: translateY(-130%) translateX(20%);
+  transform: translateY(-130%) translateX(25%);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
