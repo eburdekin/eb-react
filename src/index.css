@@ -12,6 +12,7 @@
 
 :root {
   --main-bg-color: #233830;
+  --secondary-bg-color: #2e483f;
   --primary-text-color: #d2e9e1;
   --secondary-text-color: #97cfbb;
   --tertiary-text-color: #619a86;
@@ -26,6 +27,7 @@
 
 a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 body {
@@ -155,7 +157,6 @@ nav {
 }
 
 .nav-link {
-  color: var(--primary-text-color);
   padding: 32px 0px;
 
   @media (min-width: 768px) {
@@ -419,7 +420,7 @@ h3 {
 }
 
 .review-card {
-  background-color: #2e483f;
+  background-color: var(--secondary-bg-color);
   border-radius: 15px;
   padding: 22px;
   max-width: 672px;
@@ -547,11 +548,34 @@ h3 {
 footer {
   width: 100%;
   text-align: center;
-  margin-bottom: 2px;
 }
 
 .footer-contact-icon-container {
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.credits {
+  position: relative;
+}
+
+.credits:hover {
+  color: var(--secondary-text-color)
+}
+
+.credits-popup {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  border-radius: 15px;
+  padding: 16px;
+  opacity: 0;
+  z-index: 999;
+  position: absolute;
+  transform: translateY(-130%) translateX(20%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.credits:hover .credits-popup {
+  opacity: 100;
 }

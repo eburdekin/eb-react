@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./components/Nav";
 import Hero from "./sections/Hero";
-import Projects from "./sections/Work";
+import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Reviews from "./sections/Reviews";
 import Contact from "./sections/Contact";
@@ -43,6 +43,7 @@ function App() {
           <Skills />
           <Reviews />
           <Contact />
+          <Footer />
         </div>
         {showBackToTop && (
           <button className="scroll-to-top-button" onClick={scrollToTop}>
@@ -50,7 +51,6 @@ function App() {
           </button>
         )}
       </div>
-      <Footer />
     </div>
   );
 }

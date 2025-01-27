@@ -9,8 +9,14 @@ const Footer = () => {
       </div>
 
       <span className="small-text">
-        &copy; {new Date().getFullYear().toString()} Eileen Burdekin. Built with
-        React.
+        &copy; {new Date().getFullYear().toString()} Eileen Burdekin •{" "}
+        <span className="hover-text credits">
+          Credits{" "}
+          <div className="credits-popup">
+            Built with React and deployed with Netlify. Text is set in Acorn
+            Semibold and GT Planar Regular.
+          </div>
+        </span>
       </span>
     </footer>
   );

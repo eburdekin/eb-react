@@ -3,8 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 
 const Work = () => {
   return (
-    <section id="work">
-      <h2 className="section-header">Work</h2>
+    <section id="projects">
+      <h2 className="section-header">Projects</h2>
       <div className="project-card-container">
         <ProjectCard
           image="../images/expungeassist.webp"
