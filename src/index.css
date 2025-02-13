@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Acorn";
-  src: url('../fonts/acorn.woff') format('woff');
+  src: url("../fonts/acorn.woff") format("woff");
 }
 
 @font-face {
   font-family: "GT Sans";
-  src: url('../fonts/gt.woff') format('woff');
+  src: url("../fonts/gt.woff") format("woff");
 }
 
 /* variables */
@@ -23,6 +23,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 a {
@@ -31,7 +32,7 @@ a {
 }
 
 body {
-  font-family: "GT Sans";
+  font-family: "GT Sans", sans-serif;
   background-color: var(--main-bg-color);
   color: var(--primary-text-color);
   font-size: 18px;
@@ -40,7 +41,7 @@ body {
 
 button {
   color: white;
-  font-family: "GT Sans";
+  font-family: "GT Sans", sans-serif;
   font-size: 16px;
   background-color: var(--main-bg-color);
   border: 1px solid var(--secondary-text-color);
@@ -51,7 +52,8 @@ button {
 
 button:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 3px 3px 0px 0px var(--secondary-text-color), 10px 10px 10px -10px var(--secondary-text-color);
+  box-shadow: 3px 3px 0px 0px var(--secondary-text-color),
+    10px 10px 10px -10px var(--secondary-text-color);
 }
 
 button:disabled {
@@ -131,7 +133,6 @@ nav {
 }
 
 .nav-mobile {
-  padding-bottom: 24px;
   left: 0px;
   padding: 50px;
   display: flex;
@@ -193,8 +194,9 @@ nav {
   max-width: 448px;
 }
 
-h1, h2 {
-  font-family: "Acorn";
+h1,
+h2 {
+  font-family: "Acorn", sans-serif;
   color: var(--secondary-text-color);
   font-weight: normal;
 }
@@ -369,7 +371,6 @@ h3 {
 
   @media (min-width: 640px) {
     padding: 10px;
-    ;
   }
 }
 
@@ -491,14 +492,14 @@ h3 {
   transform-origin: left top;
 }
 
-.contact-input:focus+.contact-input-label,
-.contact-input:not(:placeholder-shown)+.contact-input-label {
+.contact-input:focus + .contact-input-label,
+.contact-input:not(:placeholder-shown) + .contact-input-label {
   transform: translateY(-26px) translateX(-4px) scale(0.7);
   color: var(--secondary-text-color);
 }
 
-.contact-input:-webkit-autofill+.contact-input-label,
-.contact-input:focus+.contact-input-label {
+.contact-input:-webkit-autofill + .contact-input-label,
+.contact-input:focus + .contact-input-label {
   transform: translateY(-26px) translateX(-4px) scale(0.7);
   color: var(--secondary-text-color);
 }
@@ -511,7 +512,7 @@ h3 {
 .contact-input {
   border: 1px solid var(--input-border-color);
   color: var(--secondary-text-color);
-  font-family: "GT Sans";
+  font-family: "GT Sans", sans-serif;
   font-size: 18px;
   background: transparent;
   width: 100%;
